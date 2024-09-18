@@ -30,6 +30,7 @@ import Glossary from './Components/Sustainability/Glossary';
 import Ecoloo from './Components/Product/Ecoloo/Ecoloo';
 import FaqPage from './Components/FAQ/FaqPage/FaqPage';
 import Scrolltotop from './Components/Scroll/Scrolltotop'
+import FeedbackForm from './Components/Feedback/Feedback';
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
    <BrowserRouter>
    <Subnavbar/>
    <div id="FlypopButton" class="flypop-button">
-            <Link href="feedbackform" target="blank"><button style={{fontFamily:'Helvetica Neue,Helvetica,Arial,sans-serif'}}>
+            <Link to="feedback" target="blank"><button style={{fontFamily:'Helvetica Neue,Helvetica,Arial,sans-serif'}}>
                 <span>Give Feedback</span>
             </button></Link>           
         </div>
@@ -67,6 +68,7 @@ function App() {
     <Route path="/glossary" element={<Glossary/>}/>
     <Route path="/ecoloo" element={<Ecoloo/>}/>
     <Route path="/faqpage" element={<FaqPage/>}/>
+    <Route path="/feedback" element={<FeedbackForm/>}/>
   </Routes>
   <Footer/>
    </BrowserRouter>
