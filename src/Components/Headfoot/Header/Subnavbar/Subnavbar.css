@@ -1,0 +1,196 @@
+/* Base styles for logo and fixed icon */
+.logo {
+    width: 15%;
+}
+
+.icon-fixed {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Navbar container with shadow */
+nav {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for navbar items */
+nav ul li {
+    font-weight: 500;
+}
+
+/* Active link styles */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #6f8313 !important;
+}
+
+/* Navbar link styling */
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 15px !important;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Extra link styling */
+a.nav-link.ex-link1 {
+    background: #153700;
+    color: white;
+}
+a.nav-link.ex-link1:hover{
+    background-color: #6f8313;
+    color:white!important;
+    border:1px solid #153700;
+}
+/* Underline effect for links on hover */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #6f8313;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #6f8313 !important;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/* Form styling */
+.form-control {
+    color: white;
+    background-color: #8080805e;
+    border: var(--bs-border-width) solid #2b9240;
+}
+
+/* General dropdown styling */
+.dropdown-menu {
+    display: none;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    position: absolute; /* Default position */
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+.dropdown-item:hover {
+    color: #f8f9fa;
+    background-color: #1d3838;
+}
+/* Show dropdown when hovering on the immediate parent */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Submenu (child) styling */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position the submenu to the right */
+    margin-left: 0;
+    min-width: 150px; /* Adjust as needed */
+}
+
+/* Show submenu when hovering on the immediate submenu parent */
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Responsive styling */
+@media (min-width: 991px) and (max-width: 1025px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 0px !important;
+        font-size: 13px !important;
+        position: relative;
+    }
+    .top-bar-area ul {
+        font-size: 10px;
+    }
+    .sticky-top {
+        padding: 25px 0px;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 3px !important;
+        font-size: 13px;
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+
+    .top-bar-area ul li span,
+    .top-bar-area ul li i {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 16%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 32%;
+        margin: auto;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 25px;
+        border: none;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        position: static;
+        top: auto;
+        left: auto;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 52%;
+    }
+
+    .icon-fixed {
+        top: 0px;
+        width: 50px;
+    }
+
+    .navbar-toggler {
+        top: 19px;
+        left: 13px;
+    }
+
+    .top-bar-area {
+        display: none !important;
+    }
+}

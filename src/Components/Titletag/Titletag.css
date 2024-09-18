@@ -1,0 +1,26 @@
+.titletag {
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  background-position: top;
+}
+.titletag-container {
+  padding-bottom: 30px;
+}
+.titletag h1 {
+  font-size: 70px;
+}
+
+@media(max-width:768px) {
+  .titletag h1 {
+    font-size: 57px;
+    text-align: center;
+}
+}
+
+@media(max-width:600px) {
+  .titletag h1 {
+    font-size: 33px;
+  }
+}

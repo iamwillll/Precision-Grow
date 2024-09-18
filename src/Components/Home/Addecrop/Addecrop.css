@@ -1,0 +1,111 @@
+.ecrop-outer{
+    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/rolling-hills.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+p.t1{
+    background: #6f8313;
+    display: inline;
+    padding: 5px 15px;
+    border-radius: 28px;
+    color: white;
+    font-size: 22px;
+}
+.ecrop_ul li{
+    display: inline;
+    font-size: 18px;
+    padding: 0px 10px;
+    font-weight: 400;
+    color:#0e2b29
+}
+.logo-list ul li,.ceritified-icon ul li{
+    display: inline;
+}
+.ceritified-icon{
+    position: relative;
+    right:0px;
+}
+.logo-list {
+    margin-top: 13%;
+}
+.agri {
+    position: relative;
+    top: 10%;
+}
+.agri ul li {
+    background-color: #17726c;
+    margin-bottom: 20px;
+    position: relative;
+    width: 80%;
+    padding: 10px 10px 10px 5%;
+    color: white;
+    border-radius: 15px 0px 0px 15px;
+}
+.agri ul li span {
+    position: absolute;
+    background-color: #063640;
+    left: -15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    top: 7px;
+    font-size: 20px;
+    box-shadow: 0px 2px 7px 0px #00ffea;
+}
+.ceritified-icon {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+@media (min-width: 991px) and (max-width: 1025px) {
+    p.t1{
+        font-size: 20px;
+    }
+    .machinee {
+        position: absolute;
+        width: 36%;
+        top: 41%;
+    }
+}
+@media(max-width:768px){
+    .machinee {
+        position: absolute;
+        width: 29%;
+        right: 0;
+        top: 54%;
+    }
+    .agri ul li {
+        width: 50%;
+        left: 26%;
+        top: -5px;
+        padding: 0px 10px 5px 5%;
+    }
+    .agri ul li span {
+        left: -7px;
+        top: -1px;
+    }
+    .ceritified-icon {
+        bottom: 2%;
+    }
+}
+@media(max-width:600px){
+    .ceritified-icon {
+        bottom: 0%;
+    }
+    .agri ul li {
+        width: 95%;
+        left: 5%;
+        top: -22px;
+        padding: 0px 8px 5px 11%;
+    }
+p.t1 {
+    font-size: 17px;
+}
+.machinee {
+    right: 78%;
+    top: 63%;
+}
+}

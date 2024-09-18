@@ -1,0 +1,56 @@
+
+.mission-feature .icon img{
+    height:60px;
+}
+.mission-card-section {
+    display: flex;
+    gap: 20px; /* Adjust spacing between cards */
+  }
+.info p{
+    font-size:17px;
+}
+.icon span{
+    margin-left: 20px;
+    font-size: 20px;
+    background: #ffa5004a;
+    padding: 0 10px;
+    font-weight: 900;
+    color: #7f911c;
+}
+.mission-feature{
+    padding:20px;
+ margin-top:10px;
+ width:100%;
+ height:100%;
+}
+.info h4{
+    color:#183838;
+}
+@media (min-width: 991px) and (max-width: 1025px) {
+    .mission-feature{
+        left: 0;
+        top: -10%;
+    }  
+    .vdotxttinfo{
+        width: 65% !important;
+    }
+    .mission-card-section{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:768px){
+    .mission-feature{
+        left: 0%;
+        top: -100%;
+    }
+    .vdotxttinfo {
+        left: 55px!important;
+        width: 67%!important;
+    padding:7%;}
+    .mission-feature{
+        flex-wrap: wrap!important;
+    }
+}
+@media(max-width:600px){
+   
+}

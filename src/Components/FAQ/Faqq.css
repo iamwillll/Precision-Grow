@@ -1,0 +1,56 @@
+/* Faq.css */
+.accordion {
+    width: 100%;
+    background-color: transparent!important;
+  }
+  .faqouter {
+    background: #2b3e3e;
+}
+  .faqh1{
+    color:#d2db66;
+  }
+  .accordion-item {
+    margin-bottom: 10px;
+    background-color: transparent;
+    color:white;
+    border:none
+  }
+  
+  .accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #8dddb13b;
+  }
+  
+  .accordion-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color:#82ddb2;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .accordion-content.open {
+    display: block;
+  }
+  
+  .icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon.fas.fa-plus {
+    transform: rotate(0);
+  }
+  
+  .icon.fas.fa-minus {
+    transform: rotate(45deg);
+  }
+  

@@ -1,0 +1,39 @@
+.top-bar-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6e8320;
+    padding:5px 0;
+}
+.marquee-bar{
+    background-color: #123838;
+    padding:10px 0 0;
+}
+.marquee-bar .orange{
+    color:orange;
+}
+.marquee-bar .o-no{
+    color:greenyellow;
+}
+a{
+    text-decoration: none;
+}
+.top-bar-area ul{
+    list-style: none;
+    padding:0!important;
+    margin:0;
+}
+.top-bar-area ul li span,.top-bar-area ul li i{
+    color:white;
+}
+.top-bar-area .addr1 li i{
+    color:rgb(118, 255, 6);
+}
+@media(max-width:768px){
+    .social{
+        display: none;
+    }
+    .top-bar-area ul li span{
+        font-size: 13px;
+    }
+}

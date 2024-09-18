@@ -1,0 +1,22 @@
+.cropsateimg .shapehere {
+    display: none;
+}
+
+.cropsateimg {
+    position: relative;
+}
+
+.innersat {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    background-position: top;
+    animation: rotateAndSlightMove 30s infinite linear;
+}
+
+@keyframes rotateAndSlightMove {
+
+    100% {
+        transform: rotate(360deg); /* Return to original position with rotation */
+    }
+}

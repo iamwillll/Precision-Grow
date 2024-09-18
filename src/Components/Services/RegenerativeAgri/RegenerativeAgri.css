@@ -1,0 +1,13 @@
+.greentitle{
+    color:#caf100;
+}
+.red-outer-div{
+    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/flies-field-crops.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.red-outer-div .row{
+background-color: #00000030;
+padding:30px;
+}

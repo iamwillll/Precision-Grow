@@ -1,0 +1,40 @@
+
+.inner-mission-info{
+  padding-top:10%;
+}
+.inner-mission-info span{
+color:#7e9128;
+font-size: 53px;
+}
+.inner-mission-info p{
+    font-size: 23px;
+}
+.inner-mission{
+    position: relative;
+}
+.inner-mission .in-left-img{
+    position: absolute;
+    bottom:0;
+    left:-100px;
+    width: 200px;
+    animation: rotateAnimation 2s infinite ease-in-out;
+}
+@keyframes rotateAnimation {
+    0% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+.in-left-img img{
+    width: 100%;
+}
+@media(max-width:600px){
+  .in-left-img img{
+    display: none;
+  }
+}
