@@ -86,8 +86,11 @@ margin-top: 28px;
 
 .socialLinks ul li {
   display: inline-block;
+  margin-bottom: 9px;
 }
-
+/* .socialLinks {
+  padding-bottom: 19px;
+} */
 .logosocial {
   display: flex;
 }

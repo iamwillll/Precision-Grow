@@ -87,10 +87,6 @@ a.nav-link.ex-link1:hover{
     color: #f8f9fa;
     background-color: #1d3838;
 }
-/* Show dropdown when hovering on the immediate parent */
-.dropdown:hover > .dropdown-menu {
-    display: block;
-}
 
 /* Submenu (child) styling */
 .dropdown-submenu {
@@ -131,6 +127,7 @@ a.nav-link.ex-link1:hover{
         font-size: 13px;
         display: inline-block;
         margin-bottom: 6px;
+        padding: 10px;
     }
 
     .top-bar-area ul li span,

@@ -83,6 +83,9 @@ p.t1{
         top: -5px;
         padding: 0px 10px 5px 5%;
     }
+    .logo-list img{
+        width:12%;
+    }
     .agri ul li span {
         left: -7px;
         top: -1px;
@@ -100,6 +103,16 @@ p.t1{
         left: 5%;
         top: -22px;
         padding: 0px 8px 5px 11%;
+    }
+    .logo-list img {
+        width: 34%;
+    }
+    .logo-list {
+        margin: 10% 5%;
+    }
+    .ceritified-icon img {
+        width: 14%;
+        float: right;
     }
 p.t1 {
     font-size: 17px;

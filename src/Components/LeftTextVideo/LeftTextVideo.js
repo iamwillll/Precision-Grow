@@ -13,11 +13,11 @@ const LeftTextVideo = ({ title, title1, description, buttonText, buttonLink, vid
         <h1>{title}</h1>
         <h5 style={{ color: '#c4e800' }}>{title1}</h5>
         <p>{description}</p>
-        <a href={buttonLink} className="btn px-5 py-3 fs-5" style={{ background: '#a9cb00', color: 'white' }}>
+        <a href={buttonLink} className="btn" style={{ background: '#a9cb00', color: 'white' }}>
           {buttonText}
         </a>
         {buttonText1 && buttonLink1 && (
-          <a href={buttonLink1} className="btn px-5 py-3 mx-3 fs-5" style={{ background: 'white', color: '#a9cb00'}}>
+          <a href={buttonLink1} className="btn" style={{ background: 'white', color: '#a9cb00'}}>
             {buttonText1}
           </a>
         )}

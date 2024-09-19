@@ -100,7 +100,7 @@ form .button-area button{
 .contact-style-one-info li:nth-child(3) i {
     background: #068685;
 }
-.country-flag li {
+.country-flag{
     margin-right: 25px;
     display: inline-flex;
 }

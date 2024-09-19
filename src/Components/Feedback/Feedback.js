@@ -1,7 +1,7 @@
  
 
 import React, { useState } from 'react';
-// import './Feedback.css';
+import './Feedback.css';
 import axios from 'axios';
 import Modal from 'react-modal';
 
@@ -26,7 +26,7 @@ const FeedbackForm = () => {
     feedbackType: '',
     message: '',
     recommendation: '', // Add recommendation to formData
-    rating: 0 // Add rating to formData
+    rating: 0  
   });
 
   const [modalIsOpen, setModalIsOpen] = useState(false);

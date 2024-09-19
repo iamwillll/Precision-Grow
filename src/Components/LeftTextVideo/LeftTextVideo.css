@@ -12,7 +12,11 @@
     height: 100%;
     overflow: hidden;
   }
-  
+  .content-box .btn {
+    padding: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
   .video-background {
     position: fixed;
     top: 50%;

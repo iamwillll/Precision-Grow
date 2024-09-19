@@ -48,3 +48,12 @@ button:hover::after {
     display: block;
 }
 
+@media(max-width:600px){
+    .acco-text {
+        font-size: 16px;
+        padding: 7px;
+    }
+    .acco-no {
+        padding: 20px;
+    }
+}

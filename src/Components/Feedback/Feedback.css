@@ -1,6 +1,6 @@
 .main_container {
     font-family: 'Montserrat', Arial, sans-serif;
-    /* background-image: url(../../assets/img/bgimg.jpg); */
+    background-image: url('../../assets/feedback-bg.jpg');
     background-position: center;
     background-repeat:  no-repeat;
     background-size: 100% 100%;
@@ -11,7 +11,7 @@
     align-items: center;
     min-width: 100%;
     min-height: 100%;
-    position: absolute;
+    position: relative;
 }
 
 /* button {
@@ -46,7 +46,7 @@ textarea {
     max-width: 768px;
     margin: 0px auto;
     position: relative;
-    background-color: #ffffff99;
+    background-color: #ffffffd9;
 }
 
 #container form {

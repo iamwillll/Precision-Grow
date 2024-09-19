@@ -8,8 +8,8 @@ import Modal from "react-modal";
 Modal.setAppElement("#root"); // Required for screen readers to work correctly
 
 const breadcrumbItems = [
-  { label: 'Home', path: '/' },
-  { label: 'Contact Us', path: '/contact' }
+  { label: "Home", path: "/" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 const Contact = () => {
@@ -22,7 +22,7 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
-    domain:"Precision Grow"
+    domain: "Precision Grow",
   });
   const [status, setStatus] = useState({ success: false, error: null });
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -62,19 +62,19 @@ const Contact = () => {
       otp: otpValue,
       countryCode: "+91",
     })
-    .then((response) => {
-      if (response.success) {
-        setIsOtpVerified(true);
-        console.log("OTP Verified Successfully");
-      } else {
-        alert("Incorrect OTP");
+      .then((response) => {
+        if (response.success) {
+          setIsOtpVerified(true);
+          console.log("OTP Verified Successfully");
+        } else {
+          alert("Incorrect OTP");
+          setIsOtpVerified(false);
+        }
+      })
+      .catch((error) => {
+        console.error("Error verifying OTP:", error);
         setIsOtpVerified(false);
-      }
-    })
-    .catch((error) => {
-      console.error("Error verifying OTP:", error);
-      setIsOtpVerified(false);
-    });
+      });
   };
 
   const handleChange = (e) => {
@@ -109,16 +109,22 @@ const Contact = () => {
         setModalIsOpen(true);
       }
     } catch (error) {
-      console.error("Error:", error.response ? error.response.data : error.message);
-      setStatus({ error: "Something went wrong. Please try again later.", success: false });
+      console.error(
+        "Error:",
+        error.response ? error.response.data : error.message
+      );
+      setStatus({
+        error: "Something went wrong. Please try again later.",
+        success: false,
+      });
     }
   };
 
   return (
     <div>
-      <Banner 
-        title="Contact Us" 
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_4.webp' 
+      <Banner
+        title="Contact Us"
+        backgroundImage="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_4.webp"
         breadcrumbItems={breadcrumbItems}
       />
       <div className="con-in">
@@ -149,6 +155,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                       />
+                      
                     </div>
                   </div>
                   <div className="field">
@@ -199,8 +206,14 @@ const Contact = () => {
                       <p>Please verify OTP to submit the form.</p>
                     )}
                   </div>
-                  {status.error && <div className="error-message">{status.error}</div>}
-                  {status.success && <div className="sent-message">Your message has been sent. Thank you!</div>}
+                  {status.error && (
+                    <div className="error-message">{status.error}</div>
+                  )}
+                  {status.success && (
+                    <div className="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                  )}
                 </form>
               </div>
               <div className="col-lg-6" data-aos="fade-right">
@@ -208,24 +221,86 @@ const Contact = () => {
                   <h2>Contact Information</h2>
                   <ul>
                     <li>
-                      <div className="content">
-                        <h5 className="title">Regd Office:</h5>
-                        <p><Link to="">B-155, Ground Floor, Vashi Plaza, Sector-17, Vashi, Mumbai, 400703</Link></p>
+                      <div class="content">
+                        <h5 class="title">
+                          <i class="fas fa-building"></i> Regd Office:
+                        </h5>
+                        <p class="coleft">
+                          <a href="/contact">
+                            B-155, Ground Floor, Vashi Plaza, Sector-17, Vashi,
+                            Mumbai, 400703
+                          </a>
+                        </p>
                       </div>
-                      <div className="content">
-                        <h5 className="title">Project Office:</h5>
-                        <p><Link to="">61, City Tower, Unit No 2, Dr. S.S. Rao Road, Parel, Mumbai, 400012</Link></p>
+                      <div class="content coleft">
+                        <h5 class="title">Project Office:</h5>
+                        <p>
+                          <a href="/contact">
+                            61, City Tower, Unit No 2, Dr. S.S. Rao Road, Parel,
+                            Mumbai, 400012
+                          </a>
+                        </p>
                       </div>
                     </li>
                     <li>
-                      <h5 className="title">Phone</h5>
-                      <p><strong>INDIA:</strong> <a href="tel:912248888888">+91 22 48888888</a> / <a href="tel:912246165798">46165798</a></p>
-                      <p><strong>MOBILE:</strong> <a href="tel:918097283444">+91 8097283444</a></p>
+                      <div className="content">
+                        <h5 className="title">
+                          <i className="fas fa-phone-alt"></i> Phone
+                        </h5>
+                        <ul className="country-flag">
+                          <li>
+                            <div className="icon-flag">
+                              <img
+                                src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/india-flag.webp"
+                                width="38px"
+                                alt="India"
+                              />
+                            </div>
+                            <div className="content">
+                              <p className="pb-2">
+                                <strong>INDIA</strong>
+                              </p>
+                              <strong>Phone:</strong>
+                              <a href="tel:912248888888">+91 22 48888888</a>/
+                              <br/><a href="tel:912246165798">46165798</a><br/>
+                              <strong>Mobile:</strong>
+                              <a href="tel:918097283444">+91 8097283444</a>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="icon-flag">
+                              <img
+                                src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/us.png"
+                                width="38px"
+                                alt="us"
+                              />
+                            </div>
+                            <div className="content">
+                              <p className="pb-2">
+                                <strong>USA</strong>
+                              </p>
+                              <strong>Phone:</strong>
+                              <a href="tel:0014242390105">+1 424-239-0105</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
-                      <h5 className="title">Email</h5>
-                      <p><a href="mailto:mail@precisiongrow.co.in">mail@precisiongrow.co.in</a><br />
-                         <a href="mailto:mail@precisiongrow.eu">mail@precisiongrow.eu</a></p>
+                      <div class="info">
+                        <h5 class="title">
+                          <i class="fas fa-envelope"></i> Email
+                        </h5>
+                        <p class="coleft">
+                          <a href="mail@precisiongrow.co.in">
+                            mail@precisiongrow.co.in
+                          </a>
+                          <br />
+                          <a href="mail@precisiongrow.eu">
+                            mail@precisiongrow.eu
+                          </a>
+                        </p>
+                      </div>
                     </li>
                   </ul>
                 </div>

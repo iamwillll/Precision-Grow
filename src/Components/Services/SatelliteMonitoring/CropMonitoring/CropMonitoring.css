@@ -20,3 +20,15 @@
         transform: rotate(360deg); /* Return to original position with rotation */
     }
 }
+@media(max-width:768px){
+    .innersat {
+        width: 16%;
+    }
+}
+@media(max-width:600px){
+    .innersat {
+        width: 25%;
+        top: 5%;
+        right: 7%;
+    }
+}

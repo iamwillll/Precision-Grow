@@ -255,4 +255,8 @@ img {
 .timeline-content p {
   font-size: 17px;
 }
+.navtabs-outer .nav-tabs .nav-link {
+  width: 48%;
+  margin-bottom: 10px;
+}
 }

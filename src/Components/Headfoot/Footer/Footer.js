@@ -23,7 +23,7 @@ function Footer() {
             <div className="col-md-12 col-lg-4">
               <div className="widget1">
                 <div className="footerlogo">
-                  <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/logo.webp' className="img-fluid mb-4 rounded" loading="lazy" alt="" />
+                  <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/foot-logo.png' className="img-fluid mb-4 rounded" loading="lazy" alt="" />
                 </div>
                 <h5>Powered By</h5>
                 <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/sap-b1.webp
