@@ -37,9 +37,16 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+    - task: CopyFiles@2
+      displayName: Copy files to staging directory
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'  # Change as needed
+        Contents: '**'  # Specifies which files to copy
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'  # Specify where to copy the files
+
     - task: PublishBuildArtifacts@1
       displayName: Publish artifact
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'  # Specify the path to publish
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'  # Path where the files were copied
         ArtifactName: 'drop'  # Name of the artifact
-        publishLocation: 'Container'
+        publishLocation: 'Container' 
