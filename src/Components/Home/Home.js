@@ -68,7 +68,7 @@ const modalOverlayStyle = {
 const modalStyle = {
   position: 'relative',
   width: '85%',
-  maxWidth: '700px',
+  maxWidth: '600px',
   backgroundColor: '#fff',
   borderRadius: '8px',
   boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',

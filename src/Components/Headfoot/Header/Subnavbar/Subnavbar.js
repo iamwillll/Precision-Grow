@@ -164,7 +164,6 @@ const Subnavbar = () => {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
-                  to="/products"
                   id="productsDropdown"
                   role="button"
                   aria-expanded={openDropdown === 'products'}
