@@ -37,4 +37,10 @@ font-size: 53px;
   .in-left-img img{
     display: none;
   }
+  .inner-mission-info {
+    padding: 10% 2%;
+}
+.inner-mission-info span {
+  font-size: 39px;
+}
 }

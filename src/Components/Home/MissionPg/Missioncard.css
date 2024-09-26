@@ -52,5 +52,10 @@
     }
 }
 @media(max-width:600px){
-   
+    .icon {
+        width: 100%!important;
+    }
+    .info {
+        padding-top: 14% !important;
+    }
 }

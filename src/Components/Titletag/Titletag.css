@@ -23,4 +23,7 @@
   .titletag h1 {
     font-size: 33px;
   }
+  .titletag-container {
+    padding-bottom: 0px;
+}
 }
