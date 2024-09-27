@@ -31,6 +31,9 @@ import Ecoloo from './Components/Product/Ecoloo/Ecoloo';
 import FaqPage from './Components/FAQ/FaqPage/FaqPage';
 import Scrolltotop from './Components/Scroll/Scrolltotop'
 import FeedbackForm from './Components/Feedback/Feedback';
+import Biosence from './Components/Product/Biosence/Biosence';
+import Farmboundary from './Components/Services/Farmboundary/Farmboundary';
+import Cropadvisory from './Components/Services/Cropadvisory/Cropadvisory';
 
 function App() {
   return (
@@ -67,8 +70,11 @@ function App() {
     <Route path="/overview" element={<Overview/>}/>
     <Route path="/glossary" element={<Glossary/>}/>
     <Route path="/ecoloo" element={<Ecoloo/>}/>
+    <Route path="/biosence" element={<Biosence/>}/>
     <Route path="/faqpage" element={<FaqPage/>}/>
     <Route path="/feedback" element={<FeedbackForm/>}/>
+    <Route path="/farmboundary" element={<Farmboundary/>}/>
+    <Route path="/cropadvisory" element={<Cropadvisory/>}/>
   </Routes>
   <Footer/>
    </BrowserRouter>

@@ -1,6 +1,6 @@
 .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 39%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -40,9 +40,9 @@
     }
   }
   @media(max-width:600px){
-    .carousel-caption{
-      top:33%;
-    }
+    .carousel-caption {
+      top: 22%;
+  }
     .carousel-caption h1{
       font-size: 13px;
     }

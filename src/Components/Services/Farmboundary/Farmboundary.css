@@ -1,0 +1,94 @@
+.quote-container {
+    position: relative;
+    padding: 20px;
+    background: #6f831347;
+    /* border-left: 5px solid #007BFF; */
+    margin: 20px 0;
+    color: white;
+}
+.quote-container::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    position: absolute;
+    left: -10px;
+    top: 14px;
+    color: #d8e800;
+    line-height: 0;
+}
+.quote-container::after {
+    content: "\f10e"; /* Font Awesome right quote icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em; /* Adjust size as needed */
+    position: absolute;
+    right: -10px; /* Adjust positioning as needed */
+    bottom: 14px; /* Adjust to align with the text */
+    color: #d8e800; /* Color for the right icon */
+    line-height: 0; /* Adjusts positioning */
+}
+.para11 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #fff; /* Text color */
+}
+.farmbounday1{
+    background-color: #eaf1ee;
+}
+
+.farmbounday1 .card {
+    background-color: #f5f5dc47;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #d9c803;
+    box-shadow: -4px -2px 0px 1px #f7ba0140;
+}
+.farmbounday1 .card p{
+    text-align: justify;
+}
+.farmbounday1 .card:hover {
+    background-color: #f5f5dc;    
+}
+.farmB3 {
+    position: relative; /* Establish a positioning context for the child elements */
+}
+
+.overlay-contentF {
+    position: absolute;
+    bottom: 29%;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 40%;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+.farmoB3{
+    padding:5% 0;
+    background-color: #2d3e3e;
+    color:white;
+}
+.farmoB4{
+    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/plant-grown.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    padding:20px 15px;
+}
+.farmoB4 h2,.ptxt {
+    text-align: center;
+}
+.farmoB4  .ptxt{
+    background-color: #577900;
+    padding:10px 0;
+    font-size: 20px;
+}
+@media(max-width:768px){
+    .overlay-contentF {
+        left: 50%;
+        width: 100%;
+    }
+}

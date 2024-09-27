@@ -20,6 +20,7 @@ form .dbl-field {
 input[type="tel"] {
     padding: 13px !important;
     text-transform: uppercase;
+    background: #f8f9fa;
 }
 .dbl-field .field {
     height: 50px;

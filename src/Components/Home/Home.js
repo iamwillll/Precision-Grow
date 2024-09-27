@@ -7,7 +7,7 @@ import Weoffer from './Weoffer/Weoffer';
 import FishMonitoring from './FishMonitoring/FishMonitoring';
 import Faqq from '../FAQ/Faqq';
 import Addecrop from './Addecrop/Addecrop';
-
+import ecropad from '../../assets/ecrop-ad.jpg'
 const Home = () => {
   // State to manage the modal visibility
   const [showAd, setShowAd] = useState(true);
@@ -25,7 +25,7 @@ const Home = () => {
           <div style={modalStyle}>
             <button style={closeButtonStyle} onClick={closeAd}>X</button>
             <img 
-              src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/e-crop-ad.jpg'
+              src={ecropad}
               alt="Advertisement" 
               style={adImageStyle}
             />

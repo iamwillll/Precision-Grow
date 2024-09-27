@@ -111,7 +111,7 @@ function Footer() {
                     <li>
                       <img
                         class="imgh"
-                        src="https://precisiongrow.co.in/assets/img/icon/india-flag.webp"
+                        src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/india-flag.webp"
                         alt=""
                         loading="lazy"
                       />
@@ -130,7 +130,7 @@ function Footer() {
                     <li>
                       <img
                         class="imgh"
-                        src="https://precisiongrow.co.in/assets/img/icon/us.png"
+                        src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/us.png"
                         alt=""
                         loading="lazy"
                       />

@@ -112,7 +112,7 @@ const Subnavbar = () => {
                     </ul>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/">
+                    <Link className="dropdown-item" to="/farmboundary">
                       Farm Boundary
                     </Link>
                   </li>
@@ -135,7 +135,7 @@ const Subnavbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/">
+                    <Link className="dropdown-item" to="/cropadvisory">
                       Crop Advisory
                     </Link>
                   </li>
@@ -183,7 +183,7 @@ const Subnavbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/ecoloo">
+                    <Link className="dropdown-item" to="/biosence">
                       BioSense
                     </Link>
                   </li>
@@ -197,7 +197,7 @@ const Subnavbar = () => {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
-                  to="/sustainability"
+                  
                   id="sustainabilityDropdown"
                   role="button"
                   aria-expanded={openDropdown === 'sustainability'}
