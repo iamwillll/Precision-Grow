@@ -1,15 +1,24 @@
 /* Base styles for logo and fixed icon */
-.logo {
+/* .logo {
     width: 15%;
+} */
+.brand-logo {width: 19%;padding-left: 4%;}
+.brand-logo p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #2d5255;
+    margin-right: 16%;
+    text-align: center;
 }
-
 .icon-fixed {
     position: fixed;
     top: 0px;
     right: 10px;
     z-index: 1000;
 }
-
+.sticky-top {z-index: 99;}
 /* Navbar container with shadow */
 nav {
     width: 100%;
@@ -30,11 +39,12 @@ nav ul li {
 
 /* Navbar link styling */
 .navbar-expand-lg .navbar-nav .nav-link {
-    margin-left: 15px !important;
-    font-size: 18px;
+    margin-left: 25px !important;
+    font-size: 16px;
+    font-weight: 600;
     position: relative;
 }
-
+.dropdown-item{font-size: 16px;font-weight: 500;color:#4f4f4f;margin: 5px 0px;}
 /* Extra link styling */
 a.nav-link.ex-link1 {
     background: #153700;
@@ -106,7 +116,7 @@ a.nav-link.ex-link1:hover{
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
 }
-
+.ecp-box  {line-height: 30px;}
 /* Responsive styling */
 @media (min-width: 991px) and (max-width: 1025px) {
     .navbar-expand-lg .navbar-nav .nav-link {
@@ -124,7 +134,7 @@ a.nav-link.ex-link1:hover{
 @media (max-width: 991px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         margin-left: 3px !important;
-        font-size: 13px;
+        font-size: 16px;
         display: inline-block;
         margin-bottom: 6px;
         padding: 10px;
@@ -148,10 +158,12 @@ a.nav-link.ex-link1:hover{
 
     .navbar-toggler {
         position: absolute;
-        top: 25px;
+        top: 15px;
         border: none;
+        background: #e6e6e6;
+  margin-top: 7px;
     }
-
+    .carousel-indicators{display: none;}
     .dropdown-menu {
         position: static;
         display: none;
@@ -170,24 +182,34 @@ a.nav-link.ex-link1:hover{
         margin-left: 0;
         width: 100%;
     }
+    .marquee-bar{padding: 0 !important;}
+    .marquee-bar h5 {
+        margin: 0;font-size: 16px;
+        padding: 8px;
+      }
 }
 
 @media (max-width: 600px) {
     .logo {
-        width: 52%;
+        width: 82%;
     }
-
+    .brand-logo {width: 57%;margin-bottom: 5px;}
+    .brand-logo p {margin-left: 22%;}
     .icon-fixed {
         top: 0px;
-        width: 50px;
+        width:56px;
+        right: 13px;
     }
 
-    .navbar-toggler {
-        top: 19px;
-        left: 13px;
+  .navbar-toggler {
+         /* . top: 30%; */
+    right:19%;
     }
 
     .top-bar-area {
         display: none !important;
     }
+}
+@media (max-width: 480px) {
+    .brand-logo p{text-align: right;margin-left: 0;font-size: 9px;}
 }

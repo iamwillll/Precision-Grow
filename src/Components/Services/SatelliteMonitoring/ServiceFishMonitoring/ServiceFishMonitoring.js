@@ -5,6 +5,11 @@ import './ServiceFishMonitoring.css'
 import VdoText from '../../../Home/VdoText/VdoText'
 import FishCard from './FishCard'
 import FishCardSlider from '../../../VideoSlider/FishCardSlider'
+import Headbanner from '../../../../assets/fantastic-seascape.webp'
+import FishBg from '../../../../assets/fish.webp'
+
+
+
 const ServiceFishMonitoring = () => {
   return (
     <>
@@ -20,9 +25,8 @@ const ServiceFishMonitoring = () => {
       <section>
         <div className='container'>
         <Titletag
-            title="Satellite Monitoring
-For Fisheries"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fantastic-seascape.webp'
+            title="Satellite Monitoring For Fisheries"
+            bgImage={Headbanner}
             className="pt-5"
           />
           <p className='txt1'>
@@ -32,8 +36,8 @@ For Fisheries"
       </section>
     </div>
   <div className='fishshape'>
-  <VdoText 
-          mediaSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fish.webp' 
+  <VdoText  
+          mediaSrc={FishBg}
           isVideo={false} 
           title="UTILISING ADVANCED TECHNOLOGY"
           Desc="We collect extensive data from satellites and various other sources. Our approach involves merging tracking data obtained from the publicly accessible automatic identification system (AIS) with information derived from vessel monitoring systems (VMS) operated by governmental entities. These partnerships enable us to access VMS data, which, alongside AIS, utilizes global positioning and transmitters to consistently broadcast vessel locations."

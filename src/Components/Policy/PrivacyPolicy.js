@@ -2,6 +2,10 @@ import React from 'react'
 import Banner from '../Banner/Banner'
 import Titletag from '../Titletag/Titletag'
 
+import HeadBanner from '../../assets/aerial-drone.webp'
+import NameBanner from '../../assets/planet-earth-global-2.webp'
+
+
 const PrivacyPolicy = () => {
     const breadcrumbItems = [
         { path: '/', label: 'Home' },
@@ -11,14 +15,14 @@ const PrivacyPolicy = () => {
     <div>
       <Banner 
         title="Privacy Policy"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+        backgroundImage={HeadBanner}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
        <div className='refund-outer term-outer'>
         <section>
         <Titletag
             title="Privacy Policy"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/planet-earth-global-2.webp'
+            bgImage={NameBanner}
             className="pt-5"
           />
           <div className='container'>

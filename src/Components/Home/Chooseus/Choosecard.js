@@ -18,7 +18,7 @@ const Choosecard = ({ imageSrc, title, text, cardStyle = {} }) => {
            // Ensure the image fits within the card
         />
         <div className="card-body">
-          <h5 className="card-title mb-2 fs-3">{title}</h5>
+          <h5 className="card-title mb-2">{title}</h5>
           <p className="card-text">{text}</p>
         </div>
       </div>

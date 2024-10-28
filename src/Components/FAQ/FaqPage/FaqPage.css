@@ -34,7 +34,7 @@ background-color:#6f8313;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/faq-arrow.png');
+    background-image: url('../../../assets/faq-arrow.png');
     padding: 10px;
     height: 40px;
     width: 40px;

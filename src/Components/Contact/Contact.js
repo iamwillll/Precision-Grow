@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Modal from "react-modal";
 
+import HeadBanner from '../../assets/hero_4.webp'
+import Indiaflag from '../../assets/india-flag.webp'
+import Usflag from '../../assets/us.png'
+
+
 Modal.setAppElement("#root"); // Required for screen readers to work correctly
 
 const breadcrumbItems = [
@@ -96,7 +101,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://ecbsf-backend.azurewebsites.net/api/contact/send",
+        "http://13.202.43.201:5000/api/contact/send",
         formData
       );
 
@@ -124,7 +129,7 @@ const Contact = () => {
     <div>
       <Banner
         title="Contact Us"
-        backgroundImage="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_4.webp"
+        backgroundImage={HeadBanner}
         breadcrumbItems={breadcrumbItems}
       />
       <div className="con-in">
@@ -220,6 +225,18 @@ const Contact = () => {
                 <div className="contact-style-one-info cont">
                   <h2>Contact Information</h2>
                   <ul>
+                  <li>
+                    <div class="content">
+                        <h5 class="title">
+                          <i class="fas fa-building"></i> Corporate Office:
+                        </h5>
+                        <p class="coleft">
+                          <a href="/contact">
+                          Unit No 22, Building No. 2(A3), Sector 1, Millennium Business Park, Mahape, Navi Mumbai, 400710
+                          </a>
+                        </p>
+                      </div>
+                      </li>
                     <li>
                       <div class="content">
                         <h5 class="title">
@@ -245,42 +262,34 @@ const Contact = () => {
                     <li>
                       <div className="content">
                         <h5 className="title">
-                          <i className="fas fa-phone-alt"></i> Phone
+                          <i className="fas fa-phone"></i> Phone
                         </h5>
                         <ul className="country-flag">
                           <li>
-                            <div className="icon-flag">
-                              <img
-                                src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/india-flag.webp"
-                                width="38px"
-                                alt="India"
-                              />
+                            <div className="icon-flag2">
+                              <img src={Indiaflag}  width="38px" alt="India"/>
                             </div>
                             <div className="content">
                               <p className="pb-2">
                                 <strong>INDIA</strong>
                               </p>
                               <strong>Phone:</strong>
-                              <a href="tel:912248888888">+91 22 48888888</a>/
-                              <br/><a href="tel:912246165798">46165798</a><br/>
+                              <a href="tel:912248888888"> +91 22 48888888</a> <br/>
+                             <a href="tel:912246165798" className="space"> +91 22 46165798</a><br/>
                               <strong>Mobile:</strong>
-                              <a href="tel:918097283444">+91 8097283444</a>
+                              <a href="tel:918097283444"> +91 8097283444</a>
                             </div>
                           </li>
                           <li>
-                            <div className="icon-flag">
-                              <img
-                                src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/us.png"
-                                width="38px"
-                                alt="us"
-                              />
+                            <div className="icon-flag2">
+                              <img src={Usflag}  width="38px" alt="us" />
                             </div>
                             <div className="content">
                               <p className="pb-2">
                                 <strong>USA</strong>
                               </p>
                               <strong>Phone:</strong>
-                              <a href="tel:0014242390105">+1 424-239-0105</a>
+                              <a href="tel:0014242390105"> +1 424-239-0105</a>
                             </div>
                           </li>
                         </ul>

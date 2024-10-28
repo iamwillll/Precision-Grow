@@ -4,6 +4,11 @@ import Titletag from "../../Titletag/Titletag";
 import "./Ecrop.css";
 import ListComponent from "../../ListComponent/ListComponent";
 import ListCompTitle from "../../ListComponent/ListCompTitle";
+
+import HeadBanner from '../../../assets/aerial-drone.webp'
+import NameBanner from '../../../assets/hero_44.webp'
+
+
 const Ecrop = () => {
     const items2 = [
       {
@@ -56,7 +61,7 @@ const Ecrop = () => {
     <div>
       <Banner
         title="e-Crop (Smart Farming With Electronic Crop)"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+        backgroundImage={HeadBanner}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
       <div className="abt-outer">
@@ -64,7 +69,7 @@ const Ecrop = () => {
           <div className="container">
             <Titletag
               title="e-Crop (Smart Farming With Electronic Crop)"
-              bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+              bgImage={NameBanner}
               className="pt-5"
             />
             <p className="txt1">
@@ -106,7 +111,7 @@ const Ecrop = () => {
       <div className="ecrop-outer3">
         <div className="shapehere"></div>
         <video autoPlay muted loop className="bg-video">
-          <source src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecrop.mp4' type="video/mp4" />
+          <source src={'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecrop.mp4'} type="video/mp4" />
           {/* <source src={bgvideo} type="video/mp4" /> */}
           Your browser does not support the video tag.
         </video>

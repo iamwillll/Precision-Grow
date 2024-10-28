@@ -85,6 +85,10 @@ form .button-area button{
     font-size: 22px;
     color: #086363;
 }
+.icon-flag2 {
+    margin-right: 20px;
+  }
+  .space {padding-left:65px;}
 .coleft {
     margin-left: 56px !important;
 }

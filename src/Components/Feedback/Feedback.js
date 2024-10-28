@@ -5,6 +5,7 @@ import './Feedback.css';
 import axios from 'axios';
 import Modal from 'react-modal';
 
+
 const FeedbackForm = () => {
   const [rating, setRating] = useState(0);
   const [recommendation, setRecommendation] = useState('');
@@ -50,7 +51,7 @@ const FeedbackForm = () => {
     };
 
     try {
-      const response = await axios.post('https://ecbsf-backend.azurewebsites.net/api/feedback/submit', dataToSubmit);
+      const response = await axios.post('"http://13.202.43.201:5000/api/feedback/submit', dataToSubmit);
 
       if (response.status === 200) {
         setFormData({
@@ -72,54 +73,65 @@ const FeedbackForm = () => {
   return (
     <div className="main_container">
       <div id="container">
+      
+        <form onSubmit={handleSubmit} role="form" id="contact_form">
+        <div id="feed-heading">
         <h1>&bull; Feedback Form &bull;</h1>
-        <h4 style={{ marginBottom: "6px" }}>
+        <h4 style={{ marginBottom: "30px" }}>
           We would appreciate it if you could take a moment <br />
           to give us your feedback on our services.
         </h4>
-        <form onSubmit={handleSubmit} role="form" id="contact_form">
+        </div>
           <div className="feedback-container">
             <div className="rate">
               <h5 style={{ margin: "0px" }}>
                 Overall, how satisfied are you with our services?
               </h5>
-              <p style={{ margin: "0px", color: "#111010" }}>
+              <p className='rateof'>
                 Rate the quality of service
-              </p>
+              </p>  
             </div>
+            <div className='clear'></div>
             <div className="emoji-container">
               <i
                 className="far fa-regular fa-face-angry fa-3x"
-                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 1 ? 'red' : '#000' }}
+                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 1 ? 'red' : 'rgb(18, 56, 56)' }}
               ></i>
               <i
                 className="far fa-regular fa-face-frown fa-3x"
-                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 2 ? 'orange' : '#000' }}
+                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 2 ? 'orange' : 'rgb(18, 56, 56)' }}
               ></i>
               <i
                 className="far fa-regular fa-face-meh fa-3x"
-                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 3 ? '#146E6F' : '#000' }}
+                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 3 ? '#146E6F' : 'rgb(18, 56, 56)' }}
               ></i>
               <i
                 className="far fa-regular fa-face-smile fa-3x"
-                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 4 ? '#06aa84' : '#000' }}
+                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 4 ? '#06aa84' : 'rgb(18, 56, 56)' }}
               ></i>
               <i
                 className="far fa-regular fa-face-laugh fa-3x"
-                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 5 ? 'green' : '#000' }}
+                style={{ transform: `translateX(-${(rating - 1) * 50}px)`, color: rating >= 5 ? 'green' : 'rgb(18, 56, 56)' }}
               ></i>
             </div>
+            <div className='clear'></div>
             <div className="rating-container">
               {Array.from({ length: 5 }, (_, index) => (
                 <i
                   key={index}
-                  className={`fas fa-regular fa-star fa-2x ${rating > index ? 'active' : ''}`}
+                  className={`fas fa-regular fa-star ${rating > index ? 'active' : ''}`}
                   onClick={() => handleStarClick(index)}
                 ></i>
               ))}
             </div>
+
             <input type="hidden" name="rating" id="rating" value={rating} />
           </div>
+
+
+          <div className='clear'></div>
+
+          <div>
           <div className="name">
             <input 
             type="text" 
@@ -142,6 +154,7 @@ const FeedbackForm = () => {
             onChange={handleChange}
             />
           </div>
+          <div className='clear'></div>
           <div className="telephone">
             <input 
             type="text" 
@@ -170,6 +183,7 @@ const FeedbackForm = () => {
               <option>Other</option>
             </select>
           </div>
+          <div className='clear'></div>
           <div className="message">
             <textarea 
             name="message" 
@@ -208,7 +222,9 @@ const FeedbackForm = () => {
           <div className="submit" style={{ alignSelf: "center", display: "grid" }}>
             <input type="submit" value="Submit Review" id="form_button" />
           </div>
+          </div>
         </form>
+        <div className='clear'></div>
       </div>
        {/* Modal for success message */}
        <Modal

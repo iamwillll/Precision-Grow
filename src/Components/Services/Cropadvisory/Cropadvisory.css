@@ -1,5 +1,6 @@
 .cropadvisory-outer {
-    background-image: linear-gradient(rgb(0 0 0 / 0%), /* Adjust the rgba values for the gradient color */ #00000094), url(https://webpagecdnstorage.blob.core.windows.net/precisiongrow/regenerative-agriculture.webp);
+    background-image: linear-gradient(rgb(0 0 0 / 0%), /* Adjust the rgba values for the gradient color */ #00000094), 
+    url(../../../assets/regenerative-agriculture.webp);
     background-size: cover;
     background-position: center;
     background-color: black;
@@ -22,3 +23,9 @@
 .cropAddiv2{
     background-color: white;
 }
+.para23{text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    hyphens: none;}

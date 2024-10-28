@@ -1,6 +1,8 @@
 // Accordion.js
 import React, { useState } from 'react';
 import './Faqq.css'; // Import custom CSS for styling
+import Faqig from '../../assets/abt.webp'
+
 
 const AccordionItemm = ({ title, content, isOpenInitially }) => {
   const [isOpen, setIsOpen] = useState(isOpenInitially);
@@ -39,7 +41,7 @@ const Faqq = () => {
         <div className='row'>
           <div className='col-lg-6'>
             <div className='faq-imgg'>
-              <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/abt.webp' alt="faqimg" className='w-100'/>
+              <img src={Faqig} alt="faqimg" className='w-100'/>
             </div>
           </div>
           <div className='col-lg-6'>

@@ -2,6 +2,11 @@ import React from 'react'
 import Banner from '../Banner/Banner'
 import ServiceCard from './ServiceCard/ServiceCard';
 import './Services.css'
+import NameBanner from '../../assets/aerial-drone.webp'
+
+
+
+
 const Services = () => {
   const breadcrumbItems = [
     { path: '/', label: 'Home' },
@@ -11,7 +16,7 @@ const Services = () => {
     <div>
      <Banner 
         title="Services"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+        backgroundImage={NameBanner}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
       <div className='service_outer'>

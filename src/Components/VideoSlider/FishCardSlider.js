@@ -6,30 +6,36 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import './FishCardSlider.css';
+import Fishser1 from "../../assets/fish-ser-2.webp"
+import Fishser2 from "../../assets/fish-ser-1.webp"
+import Fishser3 from "../../assets/fish-ser-3.webp"
+
+
+
 
 const FishCardSlider = () => {
     const FishSlideApi = [
         {
             id : 1,
-            img : 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fish-ser-2.webp',
+            img : Fishser1,
             title : "Application Programming Interfaces (APIs)",
             desc : "They facilitate queries related to fishing efforts, vessel searches based on various criteria, vessel details retrieval, and identification of vessel events such as encounters.",
         },
         {
             id : 2,
-            img : 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fish-ser-1.webp',
+            img : Fishser2,
             title : "False Identities and Spoofing",
             desc : "However, in some instances, these vessels may transmit incorrect MMSI numbers, such as a false number like 123456789 or a number belonging to another vessel. ",
         },
         {
             id : 3,
-            img : 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fish-ser-3.webp',
+            img : Fishser3,
             title : "Announcing our Data Sharing Initiative",
             desc : "We believe in empowering anyone with internet access and a computer to utilize our data for driving positive change in ocean conservation efforts.",
         },
         {
             id : 4,
-            img : 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fish-ser-1.webp',
+            img : Fishser1,
             title : "Sharing Results",
             desc : "To accomplish this goal, we've developed online portals and tools leveraging open-source technologies such as PostGis, ElasticSearch, Docker, and Kubernetes. ",
         },

@@ -1,5 +1,16 @@
 import React from 'react'
 import './Addecrop.css'
+import ecropmachine from '../../../assets/ecrop-machine.png'
+import Logo1 from '../../../assets/logo-1.webp'
+import Logo2 from '../../../assets/logo-2.webp'
+import Logo3 from '../../../assets/logo-3.webp'
+import Logo4 from '../../../assets/logo-4.webp'
+import CerLogo1 from '../../../assets/cer-logo-1.png'
+import CerLogo2 from '../../../assets/cer-logo-2.png'
+import CerLogo3 from '../../../assets/cer-logo-3.png'
+import CerLogo4 from '../../../assets/cer-logo-4.png'
+
+
 
 const Addecrop = () => {
   return (
@@ -8,13 +19,13 @@ const Addecrop = () => {
         <section>
             <div className='container-fluid'>
                 <div className='text-center mb-5'>
-                <h1>Your Own Agriculture Assistant</h1>
+                <h1 className='fw-5'>Your Own Agriculture Assistant</h1>
                 <h5 style={{color:'#164e4c'}}>Get real-time data on your crops and make informed decisions.</h5>
                 </div>
                 <div className='row'>
                     <div className='col-lg-4'>
                         <div className='machinee'>
-                            <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecrop-machine.png' alt="ecrop-device"/>
+                            <img src={ecropmachine} alt="ecrop-device"/>
                         </div>
                     </div>
                     <div className='col-lg-4 text-center'>
@@ -31,13 +42,22 @@ const Addecrop = () => {
                             </ul>
                             <div class="logo-list">
                             <ul>
-                                <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/logo-1.webp' className="logo" alt="logo"/></li>
-                                <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/logo-2.webp' className="logo" alt="logo"/></li>
-                                <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/logo-3.webp' className="logo" alt="logo"/></li>
-                                <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/logo-4.webp' className="logo" alt="logo"/></li>
+                                <li><img src={Logo1} className="logo" alt="logo"/></li>
+                                <li><img src={Logo2} className="logo" alt="logo"/></li>
+                                <li><img src={Logo3} className="logo" alt="logo"/></li>
+                                <li><img src={Logo4} className="logo" alt="logo"/></li>
                             </ul>
                         </div>
                         </div>
+
+                        <div class="ceritified-icon">
+                <ul class="hr-lines">
+                         <li><img src={CerLogo1} alt="logo"/></li>
+                        <li><img src={CerLogo2} alt="logo"/></li>
+                        <li><img src={CerLogo3} alt="logo"/></li>
+                        <li><img src={CerLogo4} alt="logo"/></li>
+                    </ul>
+                  </div>
                        </div>
                     </div>
                     <div className='col-lg-4'>
@@ -52,17 +72,11 @@ const Addecrop = () => {
                     </div>
                    
                     </div>
+                  
                 </div>
             </div>
         </section>
-        <div class="ceritified-icon">
-                <ul class="hr-lines">
-                         <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/cer-logo-1.png' alt="logo"/></li>
-                        <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/cer-logo-2.png' alt="logo"/></li>
-                        <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/cer-logo-3.png' alt="logo"/></li>
-                        <li><img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/cer-logo-4.png' alt="logo"/></li>
-                    </ul>
-                  </div>
+        
       </div>
     </div>
   )

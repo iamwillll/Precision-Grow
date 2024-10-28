@@ -1,17 +1,81 @@
+
+.Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    height: auto; 
+    max-height: 80vh; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+ 
+}
+
+/* Remove extra space inside the modal */
+#container {
+    margin: 0px auto;
+    background-color: #ffffffd9; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* Adjust form padding */
+#container form {
+    padding: 25px 80px;
+    max-height: 55vh;
+    overflow-y: auto;
+}
+
+/* Reduce excess padding and margin inside input fields */
+.main_container input,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
+/* Avoid excess space for the submit button */
+.submit {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Adjust modal overlay to be more precise */
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+}
+
+
+/* Close Button Styling */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: rgb(18, 56, 56);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
 .main_container {
     font-family: 'Montserrat', Arial, sans-serif;
-    background-image: url('../../assets/feedback-bg.jpg');
-    background-position: center;
-    background-repeat:  no-repeat;
-    background-size: 100% 100%;
-    /* margin: 47px auto; */
-    /* height: 100vh; */
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    min-width: 100%;
-    min-height: 100%;
     position: relative;
+   
 }
 
 /* button {
@@ -25,7 +89,7 @@
 }
 
 /* button, */
-input,
+.main_container  input,
 select,
 textarea {
     color: #5A5A5A;
@@ -43,19 +107,26 @@ textarea {
 }
 
 #container {
-    max-width: 768px;
     margin: 0px auto;
     position: relative;
-    background-color: #ffffffd9;
+    background-color: #ffffffd9; 
+   
 }
 
 #container form {
-    padding: 12px 37.5px 37.5px 37.5px;
+    padding:25px 80px;
+}
+
+.rateof{
+margin:0px; 
+color: rgb(111, 133, 11);
+font-weight: 700;
+font-size: 18px !important;
 }
 
 .main_container h1 {
-    color: #474544;
-    font-size: 32px;
+    color: #123838;;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 7px;
     text-align: center;
@@ -69,19 +140,19 @@ textarea {
     height: 3px;
     width: 15%;
     display: block;
-    background: #474544;
+    background: #153700;
     margin: auto;
     margin-top: 10px;
 }
 
 .main_container h4,
 .main_container h5 {
-    color: #474544;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    color: #6e8320;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing:0.6px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 
@@ -92,7 +163,7 @@ textarea {
 
 /* .icon {
     display: block;
-    fill: #474544;
+    fill: #153700;
     height: 50px;
     margin: 0 auto;
     width: 50px;
@@ -104,28 +175,29 @@ textarea {
     float: right;
     width: 45%;
     margin-top: 4px;
+    font-weight: 500;
 }
 
-input[type='text'],
+.main_container input[type='text'],
 [type='email'],
 select,
 textarea {
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
-    color: #474544;
+    border-bottom: solid 2px #153700;
+    color: #153700;
     font-size: 1.000em;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
     margin: 0em 0 1.875em 0;
     padding: 0 0 0.875em 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     width: 100%;
 }
 
 
 
-input[type='text']:focus,
+.main_container input[type='text']:focus,
 [type='email']:focus,
 textarea:focus {
     outline: none;
@@ -143,11 +215,11 @@ textarea:focus {
     margin-top: 4px;
 }
 
-select {
+.main_container select {
     outline: none;
 }
 
-select::-ms-expand {
+.main_container select::-ms-expand {
     display: none;
 }
 
@@ -162,28 +234,25 @@ select::-ms-expand {
 }
 
 .friend {
-    line-height: 150%;
-    height: 90px;
-    resize: none;
+   
     width: 100%;
-    margin: 0;
+    margin: 2% auto 0 auto;
+    text-align: center;
 }
 
 /* emoji */
 .feedback-container {
     width: 100%;
-    height: 130px;
+    min-height: 180px;
     position: relative;
-    margin: auto;
-
-
+    margin: 0 auto 7% auto;
 }
 
 .rate {
     margin: auto;
     position: absolute;
     text-align: center;
-    top: 10%;
+    top: 11%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -193,7 +262,7 @@ select::-ms-expand {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 30%;
+    top: 45%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -213,12 +282,13 @@ select::-ms-expand {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 4%;
+    bottom: 0%;
+    text-align: center;
 }
 
 .fa-star {
-    color: rgb(255, 252, 252);
-    cursor: pointer;
+    color: rgb(201, 204, 189);
+    cursor: pointer;font-size: 30px;
 }
 
 .fa-star.active {
@@ -227,63 +297,64 @@ select::-ms-expand {
 
 /* emoji end */
 
-textarea {
+.main_container textarea {
     line-height: 150%;
     height: 90px;
     resize: none;
     width: 100%;
     margin: 0px;
+    padding:15px !important;
 }
 
 
-::-webkit-input-placeholder {
-    color: #474544;
+.main_container ::-webkit-input-placeholder {
+    color: #d4d4d4;
 }
 
-:-moz-placeholder {
-    color: #474544;
+.main_container :-moz-placeholder {
+    color: #153700;
     opacity: 1;
 }
 
-::-moz-placeholder {
-    color: #474544;
+.main_container ::-moz-placeholder {
+    color: #153700;
     opacity: 1;
 }
 
-:-ms-input-placeholder {
-    color: #474544;
+.main_container :-ms-input-placeholder {
+    color: #153700;
 }
 
 #form_button {
     background: none;
-    border: solid 2px #474544;
-    color: #474544;
+    background-color: #153700;
+    border: none;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Helvetica', Arial, sans-serif;
     font-size: 0.875em;
     font-weight: bold;
     outline: none;
-    padding: 20px 35px;
+    padding: 15px;
     text-transform: uppercase;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
+    width: 45%;
+    margin: 8% auto 3% auto;
 }
 
 #form_button:hover {
-    background: #474544;
-    color: #F2F3EB;
+    background: #6f850b;
+    color: #fff;
 }
+.label:hover{background-color: #6f850b;color: #fff;}
+
 
 /*  */
 
 .switchFilter {
     width: 0;
     display: inline-block;
-    background-color: #474544;
+    background-color: #153700;
     position: absolute;
     left: 0;
     opacity: 0;
@@ -296,7 +367,8 @@ textarea {
 .label {
     cursor: pointer;
     text-transform: uppercase;
-    border: 2px solid #3d4349;
+    border:2px solid #153700;
+    color: #153700;
     width: 66px;
     padding: 5px 0px;
     text-align: center;
@@ -304,11 +376,11 @@ textarea {
     transition: all 0.4s;
     margin-right: 18px;
 }
-
+/* 
 .switch {
     position: absolute;
     z-index: 1;
-}
+} */
 
 .switch input[type="radio"] {
     visibility: hidden;
@@ -343,8 +415,8 @@ textarea {
 
 .button {
     background: none;
-    border: solid 2px #474544;
-    color: #474544;
+    border: solid 2px #153700;
+    color: #153700;
     cursor: pointer;
     display: inline-block;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -361,118 +433,91 @@ textarea {
 }
 
 .button:hover {
-    background: #474544;
+    background: #153700;
     color: #F2F3EB;
 }
 
 .button::after {
-    background: #474544;
+    background: #153700;
     color: #F2F3EB;
 }
 
-/*  */
-/* .modal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 60px;
-} */
-
-/* .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 300px;
-    text-align: center;
-    border-radius: 13px
-} */
-
-/* .thankbutton {
-    color: #aaa;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-    border: none;
-    padding: 9px;
-
-} */
-
-/* .thankbutton a {
-    text-decoration: none;
-    color: black;
-} */
-
-/* .thankbutton:hover,
-.thankbutton:focus {
-    background-color: rgb(132, 217, 53);
-    text-decoration: none;
-    cursor: pointer;
-} */
-
+.clear{clear: both;}
 @media only screen and (max-width: 769px) {
-
-    /* body {
-    background-position: center;
-    background: url(../assets/images/rolling-hills.jpg) no-repeat;
-    object-fit: cover;
-    margin: auto;
-  } */
 
     #container {
         /* margin: 20px auto; */
-        width: 70%;
+        width:100%;
     }
-
+    #container form {padding: 30px;    max-height:75vh;
+        overflow-y: auto;}
     .main_container h4 {
         margin-bottom: 12px !important;
     }
 
-    h4,
+    .main_container h4,
     h5 {
-        letter-spacing: 1px;
-        padding: 0px 7px 0px 7px;
+        letter-spacing: 0.6px;
+        padding: 0px 7px 30px 7px;
 
     }
+    .name {
+        width: 100%;
+        margin-top: 0px;
+    }
 
+    .email {
+        width: 100%;
+        margin:0em 0 1.875em 0;
+    }
+
+    .telephone {
+        width: 100%;
+    }
+
+    .feedbackType {
+        width: 100%;
+    }
+
+    .message {
+        float: none;
+        margin-top: 0px;
+    }
+
+    .submit {
+        margin-top: 15px;
+    }
+
+    .message textarea {
+        height: 64px;
+    }
     .feedback-container {
-        height: 135px;
+        height: 230px;
 
     }
 
     .emoji-container {
-        top: 31%;
+        top: 45%;
 
     }
 
     .rating-container {
         width: 100%;
-        top: 70%;
-        left: 79%;
-        /* transform: translateX(-50%); */
-        /* bottom: 0%; */
+        top: 75%;
+        left: 50%;
+        
     }
 }
 
 @media only screen and (max-width: 480px) {
-    h1 {
+    .main_container h1 {
         font-size: 26px;
     }
 
-    /* .underline {
-        width: 68px;
-    } */
 
     #form_button {
         padding: 15px 25px;
+        width: 100%;
     }
 }
 
@@ -480,17 +525,17 @@ textarea {
 
     #container {
         margin: 20px auto;
-        width: 89%;
+        width: 100%;
     }
 
     h1 {
-        font-size: 15px;
+        font-size: 18px;
     }
 
-    h4,
+    .main_container h4,
     h5 {
         letter-spacing: 0px;
-        padding: 0px 7px 0px 7px;
+        padding: 0px 7px 30px 7px;
 
     }
 
@@ -507,7 +552,7 @@ textarea {
     .rating-container {
         width: 100%;
         top: 66%;
-        left: 68%;
+        left: 50%;
         transform: translateX(-50%);
         /* bottom: 0%; */
     }
@@ -519,7 +564,7 @@ textarea {
 
     .email {
         width: 100%;
-        margin-top: 0px;
+        margin:0em 0 1.875em 0;
     }
 
     .telephone {
@@ -548,11 +593,9 @@ textarea {
         width: 35px;
     }
 
-    /* .underline {
-        width: 53px;
-    } */
 
-    input[type='text'],
+
+    .main_container input[type='text'],
     [type='email'],
     select,
     textarea {
@@ -567,7 +610,7 @@ textarea {
 }
 
 @media only screen and (max-width: 321px) {
-    h1 {
+    .main_container h1 {
         letter-spacing: 2px;
     }
 

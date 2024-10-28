@@ -4,6 +4,10 @@ import Banner from "../Banner/Banner";
 import Titletag from "../Titletag/Titletag";
 import glossaryApi from "../../../src/Components/Sustainability/GlossayApiList"; // Adjust the path according to your folder structure
 import "./Glossary.css";
+import HeadBanner from '../../assets/aerial-drone.webp'
+import NameBanner from '../../assets/hero_44.webp'
+
+
 
 // Simulate API call to fetch data
 const fetchData = () => {
@@ -34,7 +38,7 @@ const Glossary = () => {
       {/* Banner Section */}
       <Banner
         title="Sustainability Glossary"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+        backgroundImage={HeadBanner}
         breadcrumbItems={breadcrumbItems}
       />
 
@@ -43,7 +47,7 @@ const Glossary = () => {
           <div className="container">
             <Titletag
               title="Sustainability Glossary"
-              bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+              bgImage={NameBanner}
               className="pt-5"
             />
             <p className="txt1">

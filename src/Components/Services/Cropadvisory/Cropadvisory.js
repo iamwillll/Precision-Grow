@@ -9,6 +9,10 @@ import Cropgridcomp from './Cropgridcomp'; // Make sure this component is correc
 import c1 from '../../../assets/Supporting.webp'
 import c2 from '../../../assets/Reducing.webp'
 import c3 from '../../../assets/A-Commitment-to-Sustainable-Agriculture.webp'
+
+
+
+
 const api1 = [
     {
         title: "Pest Preparedness",
@@ -54,7 +58,8 @@ const Cropadvisory = () => {
             <div className='cropOut1'>
                 <LeftTextVideo
                     title="Knowledge for Growth"
-                    description="At Precision Grow, we understand the evolving needs of farmers and the agricultural systems that support them. Our Crop Advisory Services are designed to predict, prevent, and respond to plant health challenges while minimizing crop losses. Through climate-resilient and inclusive approaches, we empower farmers, particularly smallholders, with the tools and knowledge to thrive. Our services operate through three key pathways:"
+                    description="At Precision Grow, we understand the evolving needs of farmers and the agricultural systems that support them. 
+                    "
                     buttonText="Contact Us"
                     buttonLink="/contact"
                     videoSrc={cropadvisory}
@@ -64,6 +69,9 @@ const Cropadvisory = () => {
                 <section>
                     <div className="container mt-5">
                         <div className="row">
+                            <p className='para23'>Our Crop Advisory Services are designed to predict, prevent, and respond to plant health challenges while minimizing crop losses.
+                     Through climate-resilient and inclusive approaches, we empower farmers, particularly smallholders, with the tools and knowledge to thrive.
+                      Our services operate through three key pathways:</p>
                             {api1.map((card, index) => (
                                 <div className="col-lg-4 col-md-12 mb-3" key={index}>
                                     <div className="card text-center position-relative">
@@ -73,7 +81,7 @@ const Cropadvisory = () => {
                                             alt="Card"
                                         />
                                         <div className="card-body">
-                                            <h4 className="card-title">{card.title}</h4>
+                                            <h4 className="card-title" style={{color: '#575701'}}>{card.title}</h4>
                                             <p className="card-text">{card.description}</p>
                                         </div>
                                     </div>
@@ -85,8 +93,8 @@ const Cropadvisory = () => {
                 <div className='dropdivAd py-5'>
                     <div className='container'>
                         <blockquote className="quote-container">
-                            <p><b style={{color: 'yellow'}}>Empowering Agri-Service Providers</b></p>
-                            <p className="para11">Precision Grow supports a diverse range of agricultural service providers, from local agronomists to input dealers, by enhancing their advisory capabilities. We provide them with gender-sensitive and culturally relevant resources, ensuring that both men and women in rural communities benefit equally from our services. By equipping these providers with decision-support tools, we empower them to offer accurate and timely advice to farmers, improving crop productivity and creating new business opportunities for the providers themselves.</p>
+                            <h4 ><b style={{color: 'yellow'}}>Empowering Agri-Service Providers</b></h4>
+                            <p className="para20">Precision Grow supports a diverse range of agricultural service providers, from local agronomists to input dealers, by enhancing their advisory capabilities. We provide them with gender-sensitive and culturally relevant resources, ensuring that both men and women in rural communities benefit equally from our services. By equipping these providers with decision-support tools, we empower them to offer accurate and timely advice to farmers, improving crop productivity and creating new business opportunities for the providers themselves.</p>
                         </blockquote>
                     </div>
                 </div>

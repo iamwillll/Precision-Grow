@@ -5,6 +5,12 @@ import Titletag from '../../../Titletag/Titletag';
 import ListBoxBg from '../../../ListBoxBg/ListBoxBg';
 import './CropMonitoring.css'; // Import the custom CSS
 
+import Headbanner from '../../../../assets/hero_44.webp'
+import Parametr from '../../../../assets/parameters.webp'
+import satellite from '../../../../assets/satellite.webp'
+
+
+
 const item8 = [
   { detail: "For Crop health images NDVI, NDRE, SAVI, EVI and VAR" },
   { detail: "For Irrigation, NDMI, NDWI and Evapotranspiration." },
@@ -58,7 +64,7 @@ const CropMonitoring = () => {
           <div className='container'>
             <Titletag
               title="What you will get"
-              bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+              bgImage={Headbanner}
               className="pt-5"
             />
             <div className='row'>
@@ -85,42 +91,42 @@ const CropMonitoring = () => {
               </p>
               <p>Satellite-Based Crop Monitoring: Enhancing Agricultural Precision In the fast-evolving landscape of agriculture, knowledge is power. Precision Grow leverages state-of-the-art satellite technology to provide farmers with a comprehensive view of their crops at regular intervals, typically every 4-5 days. This frequency ensures that you receive timely and accurate information crucial for making decisions that impact crop health, resource allocation and overall farm management.</p>
               <h4 className='h11'>Key Features of Precision Grow's Satellite-Based Crop Monitoring:</h4>
-              <ol>
+              <ul>
                 <li>
-                  <h5 className='mt-4'>Crop Health Monitoring:</h5>
+                  <h5 className='mt-4'>1. Crop Health Monitoring:</h5>
                   <p>Precision Grow goes beyond traditional monitoring by delivering precise insights into crop health. Our satellite data captures detailed information about vegetation indices, allowing farmers to detect potential issues such as diseases, nutrient deficiencies or pest infestations early in the growing cycle. With this information, you can implement targeted interventions, reducing the risk of widespread crop damage.</p>
                 </li>
                 <li>
-                  <h5>Crop Irrigation Management:</h5>
+                  <h5>2. Crop Irrigation Management:</h5>
                   <p>Water is a precious resource, and efficient irrigation is paramount for sustainable agriculture. Precision Grow's satellite-based monitoring includes real-time data on soil moisture levels, enabling farmers to optimize irrigation schedules. Whether it's avoiding overwatering or ensuring crops receive adequate moisture during dry spells, our technology helps conserve water and enhance irrigation efficiency.</p>
                 </li>
                 <li>
-                  <h5>Soil Organic Carbon (SOC) Analysis:</h5>
+                  <h5>3. Soil Organic Carbon (SOC) Analysis:</h5>
                   <p>Soil health is the foundation of successful farming. Precision Grow provides insights into Soil Organic Carbon levels, a key indicator of soil fertility and overall soil health. Understanding SOC variations across your fields empowers you to make informed decisions about soil management practices, fostering long-term sustainability.</p>
                 </li>
                 <li>
-                  <h5>Digital Elevation Models (DEM):</h5>
+                  <h5>4. Digital Elevation Models (DEM):</h5>
                   <p>Topography plays a crucial role in agricultural planning. Precision Grow utilizes DEM data to create accurate 3D models of your terrain, allowing for precise land leveling and drainage planning. This information is invaluable for optimizing field layouts and addressing topographical challenges to maximize productivity.</p>
                 </li>
                 <li>
-                  <h5>Radar Data for Cloudy or Rainy Seasons:</h5>
+                  <h5>5. Radar Data for Cloudy or Rainy Seasons:</h5>
                   <p>Weather conditions can often impede satellite imagery. In response, Precision Grow incorporates radar data during cloudy or rainy seasons. This ensures continuous monitoring even when traditional optical satellite data may be hindered, providing an uninterrupted flow of insights for informed decision-making.</p>
                 </li>
-              </ol>
+              </ul>
             </div>
           </div>
         </section>
       </div>
- <div className='cropsateimg'>
+ <div className='cropsateimg parameter'>
  <ListBoxBg
-  mediaSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/parameters.webp'  // Path to the image or video
+  mediaSrc={Parametr} // Path to the image or video
   title="18 DIFFERENT PARAMETERS"
   items={item8}
   textcolor="#c6e800"  // Text color for the title
   bgcolor="rgba(43, 62, 62, 0.82)"  // Background color of the content box
   mediaType="Image"  // Use 'image' for image or 'video' for video
 /> 
-<img className="innersat" src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/satellite.webp' alt="s" />
+<img className="innersat" src={satellite} alt="s" />
  </div>
     </>
   );

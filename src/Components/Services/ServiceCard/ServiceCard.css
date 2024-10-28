@@ -1,7 +1,7 @@
 .service_card_outer .card {
     text-align: center;
     padding: 35px;
-    background: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/landscape-with-warm-tones.webp') right bottom no-repeat;
+    background: url('../../../assets/landscape-with-warm-tones.webp') right bottom no-repeat;
     margin-bottom: 55px;
     min-height: 830px;
 }

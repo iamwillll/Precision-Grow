@@ -15,7 +15,7 @@
     font-weight: 700;
 }
 .fishshape .shapehere{
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/bg-2.png');
+    background-image: url('../../../../assets/bg-2.png');
 }
 .fishshape .vdotxttinfo{
     background-color: #2b3e3ed1;
@@ -24,4 +24,7 @@
 .fishshape h2{
 color:#00d9ff;
 font-weight: 800;
+}
+.fishshape p {
+    color: #fff;
 }

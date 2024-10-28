@@ -3,6 +3,12 @@ import LeftTextVideo from "../../LeftTextVideo/LeftTextVideo";
 import Titletag from "../../Titletag/Titletag";
 import './AgriDrone.css'
 import ListBoxBg from "../../ListBoxBg/ListBoxBg";
+
+import Namebanner from '../../../assets/hero_44.webp'
+import SDS from '../../../assets/sds.webp'
+import Videobg from '../../../assets/agri-drone.mp4';
+
+
 const item7 =[
     {
       detail : "Cutting-edge technology for unmatched precision.",
@@ -58,13 +64,13 @@ const AgriDrone = () => {
           description="At Precision Grow, we transform agriculture with advanced Agri-Drone services, delivering unmatched efficiency, precision, and sustainability."
           buttonText="Contact Us"
           buttonLink="/contact"
-          videoSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/23.mp4'
+          videoSrc={Videobg}
         />
       </div>
       <div className="ai-outer drone-div">
         <section>
           <div className="container">
-            <Titletag title="Agri Drone" bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp' className="pt-5" />
+            <Titletag title="Agri Drone" bgImage={Namebanner} className="pt-5" />
             <div className="loanp2 text-center">
               <p>
                 Our tailored drone technology empowers farmers for precise and
@@ -92,7 +98,7 @@ const AgriDrone = () => {
       </div>
     
       <ListBoxBg
-  mediaSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/sds.webp'  // Path to the image or video
+  mediaSrc={SDS}  // Path to the image or video
   title="Why Choose Precision Grow?"
   items={item7}
   textcolor="#c6e800"  // Text color for the title

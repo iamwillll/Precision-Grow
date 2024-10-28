@@ -3,6 +3,12 @@ import Banner from '../Banner/Banner';
 import './About.css';
 import Titletag from '../Titletag/Titletag';
 import VdoText from '../Home/VdoText/VdoText';
+import HeadBanner from '../../assets/aerial-drone.webp'
+import NameBanner from '../../assets/hero_44.webp'
+import Drone from "../../assets/drone-scanning.webp"
+import Wheat from '../../assets/9.png'
+
+
 
 const About = () => {
   const breadcrumbItems = [
@@ -14,7 +20,7 @@ const About = () => {
     <div>
       <Banner 
         title="About Us"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+        backgroundImage={HeadBanner}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
       <div className='abt-outer'>
@@ -22,7 +28,7 @@ const About = () => {
      <div className='container'>
           <Titletag
             title="About Us"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+            bgImage={NameBanner}
             className="pt-5"
           />
           <p className='txt1'>
@@ -31,7 +37,7 @@ const About = () => {
         </div>
      </section>
         <VdoText 
-          mediaSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/drone-scanning.webp' 
+          mediaSrc={Drone} 
           isVideo={false} 
           title="PRECISION GROW'S ADVANCED TECHNOLOGY"
           Desc="Unleashing the Power of Satellite Analytics Unlock the full potential of your farm with Precision Grow's state-of-the-art satellite analytics platform. Our technology provides real-time, high-resolution data, going beyond conventional precision farming to deliver actionable insights into crop health, moisture levels, pest infestations and more. Elevate your farming practices with Precision Grow!"
@@ -42,7 +48,7 @@ const About = () => {
           <div className="row align-center">
             <div className="col-xl-5 col-lg-5">
               <div className="choose-us-thumb">
-                <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/9.png' alt="Vision&Mission"/>
+                <img src={Wheat} alt="Vision&Mission"/>
               </div>
             </div>
             <div className="col-xl-6 offset-xl-1 col-lg-7">

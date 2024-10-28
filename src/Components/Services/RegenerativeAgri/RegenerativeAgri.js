@@ -4,6 +4,9 @@ import Titletag from "../../Titletag/Titletag";
 import VdoText from "../../Home/VdoText/VdoText";
 import './RegenerativeAgri.css'
 import ListCompTitle from "../../ListComponent/ListCompTitle";
+import Headbanner from '../../../assets/regenerative-agriculture.webp'
+import Namebanner from '../../../assets/hero_44.webp'
+import Plant from '../../../assets/plant-grown.webp'
 
 
 const breadcrumbItems = [
@@ -12,7 +15,6 @@ const breadcrumbItems = [
 ];
 
 const items = [
-    { title: 'Soil Health:', detail: 'Emphasis on increasing soil organic matter and improving soil biology to enhance nutrient cycling, water retention, and carbon sequestration.' },
     { title: 'Diverse Crop Rotations:', detail: 'Implementing diverse crop rotations and cover cropping to break pest and disease cycles, improve soil structure, and increase biodiversity.' },
     { title: 'LONG-TERM FIRE STATISTICS', detail: 'Export historical fire data and analytics.' },
     { title: 'Reduced Tillage:', detail: 'Minimizing soil disturbance to maintain soil structure, reduce erosion, and preserve soil microorganisms.' },
@@ -25,6 +27,8 @@ const items = [
     { title: 'Integrated Pest Management (IPM):', detail: 'Using natural predators, diversified planting, and biological controls to manage pests and reduce reliance on chemical pesticides.'},
     { title: 'Water Management:', detail: 'Implementing practices such as rainwater harvesting, efficient irrigation systems, and contour farming to optimize water use and reduce runoff.'},
     { title: 'Local and Community Focus:', detail: 'Supporting local food systems and fostering community involvement to create more resilient and sustainable agricultural practices.'},
+    { title: 'Soil Health:', detail: 'Emphasis on increasing soil organic matter and improving soil biology to enhance nutrient cycling, water retention, and carbon sequestration.' },
+
   ];
 
 const RegenerativeAgri = () => {
@@ -33,17 +37,18 @@ const RegenerativeAgri = () => {
     <div>
       <Banner
         title="Regenerative Agriculture"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/regenerative-agriculture.webp'
+        backgroundImage={Headbanner}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
       <div className="abt-outer">
+        <section>
         <div className="container">
           <Titletag
             title="Regenerative Agriculture"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
-            className="pt-5"
+            bgImage={Namebanner}
+            className="pt-5 mb-5"
           />
-          <p className="txt1">
+          <p className="txt1 mt-4">
             At <span>Precision Grow</span>, we are pioneering a new era in
             agriculture, harnessing the power of cutting-edge satellite
             analytics to revolutionize the way we farm. Our commitment is to
@@ -52,8 +57,9 @@ const RegenerativeAgri = () => {
             of agriculture with Precision Grow!
           </p>
         </div>
+        </section>
         <VdoText
-          mediaSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/plant-grown.webp'
+          mediaSrc={Plant}
           isVideo={false}
           title="How Does It Work?"
           Desc="The key to regenerative agriculture is that it not only “does no harm” to the land but improves it, using technologies that regenerate and revitalize the soil and the environment. Regenerative agriculture leads to healthy soil, capable of producing high quality, nutrient-dense food while simultaneously improving, rather than degrading land, and ultimately leading to productive farms and healthy communities and economies. It is dynamic and holistic, incorporating permaculture and organic farming practices, including conservation tillage, cover crops, crop rotation, composting, mobile animal shelters, and pasture cropping, to increase food production, farmers’ income, and especially, topsoil."
@@ -64,7 +70,7 @@ const RegenerativeAgri = () => {
         <div className="red-outer-div">
           <section>
             <div className="container">
-                <h2 className="greentitle">Here are some key principles and practices associated with regenerative agriculture:</h2>
+                <h2 className="darkgreentitle">Here are some key principles and practices associated with regenerative agriculture:</h2>
               <div className="row">
                 <div className="col-lg-6">
                 <ListCompTitle items={items1} />

@@ -2,6 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Subnavbar.css'; // Import the CSS file
 import Topbar from '../Topbar/Topbar';
+import place from '../../../../assets/great-place-to-work.png';
+import Logo from '../../../../assets/logo.webp'
+import SDG from '../../../../assets/sdg-india.png'
+
+
+
 
 const Subnavbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -33,18 +39,13 @@ const Subnavbar = () => {
       <Topbar />
       <nav className="navbar navbar-expand-lg bg-white sticky-top">
         <div id="topIcon" className="icon-fixed">
-          <img
-            src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/great-place-to-work.png"
-            alt="Great Place to Work"
-          />
+          <img src={place} alt="Great Place to Work"/>
         </div>
         <div className="container-fluid">
-          <img
-            className="logo"
-            loading="lazy"
-            src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/logo.webp"
-            alt="logo"
-          />
+        <div className="brand-logo">
+        <Link className="nav-link active" aria-current="page" to="/" onClick={() => setIsNavbarOpen(false)}><img className="logo" loading="lazy" src={Logo} alt="logo" /></Link>
+          <p className=''>ISO/IEC 27001:2022 Certified</p>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -61,12 +62,12 @@ const Subnavbar = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0" ref={dropdownRef}>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link className="nav-link active" aria-current="page" to="/" onClick={() => setIsNavbarOpen(false)}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/about" onClick={() => setIsNavbarOpen(false)}>
                   About Us
                 </Link>
               </li>
@@ -90,8 +91,7 @@ const Subnavbar = () => {
                   <li className="dropdown-submenu">
                     <Link
                       className="dropdown-item dropdown-toggle"
-                      to="/farmmanagement"
-                    >
+                      to="#" >
                       Satellite Monitoring
                     </Link>
                     <ul
@@ -100,24 +100,24 @@ const Subnavbar = () => {
                       }`}
                     >
                       <li>
-                        <Link className="dropdown-item" to="/crop_monitoring">
+                        <Link className="dropdown-item" to="/crop_monitoring"  onClick={() => setIsNavbarOpen(false)}>
                           Crop Monitoring
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/fish_monitoring">
+                        <Link className="dropdown-item" to="/fish_monitoring" onClick={() => setIsNavbarOpen(false)}>
                           Fish Monitoring
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/farmboundary">
+                    <Link className="dropdown-item" to="/farmboundary" onClick={() => setIsNavbarOpen(false)}>
                       Farm Boundary
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/precision_grow_ai">
+                    <Link className="dropdown-item" to="/precision_grow_ai" onClick={() => setIsNavbarOpen(false)}>
                       Precision Grow AI
                     </Link>
                   </li>
@@ -130,32 +130,32 @@ const Subnavbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/product_traceability">
+                    <Link className="dropdown-item" to="/product_traceability" onClick={() => setIsNavbarOpen(false)}>
                       Product Traceability
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/cropadvisory">
+                    <Link className="dropdown-item" to="/cropadvisory" onClick={() => setIsNavbarOpen(false)}>
                       Crop Advisory
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/wildfire_solution">
+                    <Link className="dropdown-item" to="/wildfire_solution" onClick={() => setIsNavbarOpen(false)}>
                       Wildfire Solution
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/agri_insurance">
+                    <Link className="dropdown-item" to="/agri_insurance" onClick={() => setIsNavbarOpen(false)}>
                       Agri Insurance
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/agri_loan">
+                    <Link className="dropdown-item" to="/agri_loan" onClick={() => setIsNavbarOpen(false)}>
                       Agri Loan
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/agri_drone">
+                    <Link className="dropdown-item" to="/agri_drone" onClick={() => setIsNavbarOpen(false)}>
                       Agri Drone
                     </Link>
                   </li>
@@ -178,17 +178,17 @@ const Subnavbar = () => {
                   aria-labelledby="productsDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item" to="/ecrop">
+                    <Link className="dropdown-item" to="/ecrop" onClick={() => setIsNavbarOpen(false)}>
                       e-Crop (Smart Farming With Electronic Crop)
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/biosence">
+                    <Link className="dropdown-item" to="/biosence" onClick={() => setIsNavbarOpen(false)}>
                       BioSense
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/ecoloo">
+                    <Link className="dropdown-item" to="/ecoloo" onClick={() => setIsNavbarOpen(false)}>
                       ECOLOO
                     </Link>
                   </li>
@@ -212,12 +212,12 @@ const Subnavbar = () => {
                   aria-labelledby="sustainabilityDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item" to="/overview">
+                    <Link className="dropdown-item" to="/overview" onClick={() => setIsNavbarOpen(false)}>
                       Overview
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/glossary">
+                    <Link className="dropdown-item" to="/glossary" onClick={() => setIsNavbarOpen(false)}>
                       Glossary
                     </Link>
                   </li>
@@ -241,7 +241,7 @@ const Subnavbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/faqpage" target="_blank">
+                <Link className="nav-link" to="/faqpage"  onClick={() => setIsNavbarOpen(false)}>
                   FAQ
                 </Link>
               </li>
@@ -263,31 +263,31 @@ const Subnavbar = () => {
                   aria-labelledby="policyDropdown"
                 >
                   <li>
-                    <Link className="dropdown-item" to="/refund_policy">
+                    <Link className="dropdown-item" to="/refund_policy" onClick={() => setIsNavbarOpen(false)}>
                       Refund Policy
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/terms_conditions">
+                    <Link className="dropdown-item" to="/terms_conditions" onClick={() => setIsNavbarOpen(false)}>
                       Terms & Conditions
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/privacy_policy">
+                    <Link className="dropdown-item" to="/privacy_policy" onClick={() => setIsNavbarOpen(false)}>
                       Privacy Policy
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact" onClick={() => setIsNavbarOpen(false)}>
                   Contact
                 </Link>
               </li>
               <li className="nav-item ecp-box">
                 <Link
                   className="nav-link ex-link1 rounded"
-                  to="https://ecroptoday.co.in/"
+                  to="https://ecroptoday.co.in/"  onClick={() => setIsNavbarOpen(false)}
                   target="_blank"
                 >
                   E-CROPTODAY
@@ -296,10 +296,10 @@ const Subnavbar = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link rounded p-0"
-                  to="https://sdgindiaindex.niti.gov.in/#/"
+                  to="https://sdgindiaindex.niti.gov.in/#/"  onClick={() => setIsNavbarOpen(false)}  target="_blank"
                 >
                   <img
-                    src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/sdg-india.png"
+                    src={SDG}
                     alt="sdg index"
                     className="sdg-img"
                   />

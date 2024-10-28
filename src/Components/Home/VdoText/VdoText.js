@@ -26,7 +26,7 @@ const VdoText = ({ mediaSrc,Desc1, isVideo, title, Desc, textcolor, bgcolor,text
       )}
       {/* Info Box */}
       <div className="vdotxttinfo position-absolute" style={{ backgroundColor: bgcolor }}>
-        <h2 style={{ color: textcolor }}>{title}</h2>
+        <h2  style={{ color: textcolor }} className='work'>{title}</h2>
         <p style={{ color: textcolorP }}>
          {Desc}
         </p>

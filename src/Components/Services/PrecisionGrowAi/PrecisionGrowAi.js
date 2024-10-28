@@ -3,6 +3,11 @@ import './PrecisionGrowAi.css'
 import LeftTextVideo from '../../LeftTextVideo/LeftTextVideo'
 import Titletag from '../../Titletag/Titletag'
 import ListComponent from '../../ListComponent/ListComponent'
+
+import Namebanner from '../../../assets/28.webp'
+
+
+
 const PrecisionGrowAi = () => {
 
 // Define lists for different columns
@@ -37,7 +42,7 @@ const listItems1 = [
         <div className='container'>
         <Titletag
             title="Benefits"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/28.webp'
+            bgImage={Namebanner}
             className="pt-5"
           />
           <div className='row'>

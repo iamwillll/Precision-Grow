@@ -3,6 +3,15 @@ import Banner from '../Banner/Banner'
 import Titletag from '../Titletag/Titletag';
 import VdoText from '../Home/VdoText/VdoText';
 import './Overview.css'
+
+import HeadBanner from '../../assets/aerial-drone.webp'
+import NameBanner from '../../assets/hero_44.webp'
+import Goals from '../../assets/ship_1.webp'
+import Sustainable from '../../assets/Sustainable-Development-Goals.png'
+import GoalsHead from '../../assets/lg2.png'
+import life from '../../assets/sustainable-still-life.webp'
+
+
 const Overview = () => {
     const breadcrumbItems = [
         { path: '/', label: 'Home' },
@@ -12,7 +21,7 @@ const Overview = () => {
     <div>
         <Banner 
         title="Sustainability Overview"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+        backgroundImage={HeadBanner}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
             <div className='abt-outer'>
@@ -20,7 +29,7 @@ const Overview = () => {
      <div className='container'>
           <Titletag
             title="Sustainability Overview"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+            bgImage={NameBanner}
             className="pt-5"
           />
           <p className='txt1' >
@@ -37,15 +46,15 @@ const Overview = () => {
                     <div className='col-lg-5  d-flex justify-content-center align-items-center'>
                     <Titletag
             title="Agriculture And The Global Goals"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ship_1.webp'
+            bgImage={Goals}
             className="pt-5"
           />
                     </div>
                     <div className='col-lg-6 offset-lg-1'>
                         <div className='tine'>
-                            <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/Sustainable-Development-Goals.png' alt="wheel earth" className='wheelll'/>
+                            <img src={Sustainable} alt="wheel earth" className='wheelll'/>
                             <div className='innerSimg'>
-                                <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/lg2.png' alt="lg-logo"/>
+                                <img src={GoalsHead} alt="lg-logo"/>
                             </div>
 
                         </div>
@@ -66,9 +75,9 @@ const Overview = () => {
           </div>
         </section>
       </div>
-      <div className='overvdotxt'>
+      <div className='overvdotxt white'>
       <VdoText 
-          mediaSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/sustainable-still-life.webp' 
+          mediaSrc={life}
           isVideo={false} 
           Desc="Precision Grow’s resilience in incorporating sustainability into its core operations ensures that it remains at the forefront of industry standards, setting a model for others to follow. This commitment positions Precision Grow not just as a business leader but as a responsible corporate citizen dedicated to fostering a sustainable future for all. Moreover, Precision Grow actively engages with stakeholders, including employees, customers, suppliers, and the communities in which it operates, to ensure that its sustainability efforts are inclusive and impactful."
           Desc1 ="Through educational programs, partnerships with environmental organizations, and community outreach initiatives, the company promotes sustainability awareness and action at multiple levels."

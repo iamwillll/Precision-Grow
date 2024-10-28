@@ -1,5 +1,5 @@
 .ecrop-outer2, .overview-outer1{
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/21.png');
+    background-image: url('../../../assets/21.png');
     background-repeat: no-repeat;
     background-color: #E9F1EE;
     background-position: left bottom;
@@ -46,7 +46,7 @@ padding:10% 0;
     color: #cede00;
 }
 .ecrop-outer3 .shapehere,.ecp4 .shapehere{
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/bg-3.png');
+    background-image: url('../../../assets/bg-3.png');
 }
 .navtabshere1 #nav-tab {
     display: flex;
@@ -90,10 +90,18 @@ padding:10% 0;
     text-shadow: 2px 0px 0px #fff;
 }
 .ecp4{
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecrop-device1.webp');
+    background-image: url('../../../assets/ecrop-device1.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
+.ecropouter4 .ai-list-item ul li h4 {
+    color: #fff7cc;
+}
+.ecropouter4 .ai-list-item ul li p {
+    color: #fff;
+}
+
+
 @media(max-width:768px){
     .ecrop-outer3 .content-overlay {
         width: 81%;

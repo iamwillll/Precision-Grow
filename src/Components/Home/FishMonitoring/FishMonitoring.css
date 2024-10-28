@@ -4,8 +4,7 @@
     transition: all .5s;
 }
 .fmont-outer .btn:hover{
-    border:2px solid #00446f;
-    color:#00446f
+    color:#ffff
 }
 .box1{
     padding:0 100px;
@@ -16,10 +15,10 @@
 }
 .box1 .fish-in{
     position: absolute;
-    right: 5%;
-    width: 19%;
-    bottom: 0px;
-}
+    right:7%;
+    width: 29%;
+    bottom: -14%;
+  }
 .content-center .fish-in img{
     width: 100%;
 }
@@ -33,6 +32,9 @@
     background-size: cover;
     height:100%
 }
+.fmont-outer .btn:hover {
+    background: #111913;
+  }
 @media (min-width: 991px) and (max-width: 1025px) {
 .box1 {
     padding: 57px 51px;}
@@ -40,4 +42,7 @@
 @media(max-width:768px){
     .box1 {
         padding: 9%;}
+        .fishmont.d-flex {
+            display: block !important;
+          }
 }

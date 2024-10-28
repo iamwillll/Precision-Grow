@@ -8,6 +8,13 @@ import FishMonitoring from './FishMonitoring/FishMonitoring';
 import Faqq from '../FAQ/Faqq';
 import Addecrop from './Addecrop/Addecrop';
 import ecropad from '../../assets/ecrop-ad.jpg'
+
+import State from '../../assets/Vdotxt.mp4'
+
+
+
+
+
 const Home = () => {
   // State to manage the modal visibility
   const [showAd, setShowAd] = useState(true);
@@ -38,7 +45,7 @@ const Home = () => {
       <MissionPg />
       <Chooseus />
       <VdoText
-        mediaSrc="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/Vdotxt.mp4"
+        mediaSrc={State}
         isVideo={true}
         title="State Of The Art Technology"
         Desc="Unleashing the Power of Satellite Analytics Unlock the full potential of your farm with Precision Grow's state-of-the-art satellite analytics platform. Our technology provides real-time, high-resolution data, going beyond conventional precision farming to deliver actionable insights into crop health, moisture levels, pest infestations and more. Elevate your farming practices with Precision Grow!"

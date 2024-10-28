@@ -4,6 +4,12 @@ import Titletag from '../../Titletag/Titletag';
 import fqaApi from './FaqPageApi'; // Importing fqaApi
 import './FaqPage.css';
 
+import HeadBanner from '../../../assets/aerial-drone.webp'
+import NameBanner from '../../../assets/hero_44.webp'
+
+
+
+
 const FaqPage = () => {
     const breadcrumbItems = [
         { path: '/', label: 'Home' },
@@ -21,7 +27,7 @@ const FaqPage = () => {
         <div>
             <Banner
                 title="FAQ"
-                backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+                backgroundImage={HeadBanner}
                 breadcrumbItems={breadcrumbItems}
             />
             <div className='abt-outer'>
@@ -30,7 +36,7 @@ const FaqPage = () => {
                         <div className="container">
                             <Titletag
                                 title="FAQ"
-                                bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+                                bgImage={NameBanner}
                                 className="pt-5"
                             />
                             <div className="col-md-11 mx-auto" >

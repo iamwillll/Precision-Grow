@@ -1,25 +1,42 @@
 import React from "react";
 import "./Ecoloo.css";
 import Titletag from "../../Titletag/Titletag";
+
+import Headbanner from '../../../assets/ecolo-bg.jpg'
+import NameBanner from '../../../assets/hero_44.webp'
+import Circle from '../../../assets/eco-1.png'
+import Circle1 from '../../../assets/eco-2.png'
+import Circle2 from '../../../assets/eco-3.png'
+import Circle3 from '../../../assets/eco-4.png'
+import Circle4 from '../../../assets/eco-5.png'
+import toilet1 from '../../../assets/ecolo-1.webp'
+import toilet2 from '../../../assets/ecolo-3.webp'
+import toilet3 from '../../../assets/toilet.jpg'
+import icon1 from '../../../assets/save-energy.png'
+import icon2 from '../../../assets/sandclock.png'
+import icon3 from '../../../assets/carbon.png'
+
+
+
 const Ecoloo = () => {
   const ecolocard = [
     {
       id: 1,
       title: "Water and Energy Saving",
-      imgg: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/save-energy.png',
+      imgg:icon1,
       det: " 1. Reduction of  water  consumption  on  the flushing . ",
       det1: "2. Reduction of energy used to treat and pump water and wastewater, and to produce more chemical fertilizer.",
     },
     {
       id: 2,
       title: "Passive Income thru Fertiliser",
-      imgg: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/sandclock.png',
+      imgg:icon2,
       det: "A self-sustained technology that generates passive income to the end users from the liquid fertilizer collected, saves money and creates better, healthier and greener environment for its users.",
     },
     {
       id: 3,
       title: "Carbon Emission Footprint Reduction",
-      imgg: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/carbon.png',
+      imgg:icon3,
       det: "The carbon emission is caused by sewage treatment and sewage treatment plants, usage of chemical fertilizer, energy used to treat and pump water and wastewater, pollution caused by chemical fertilizer.",
     },
   ];
@@ -27,14 +44,14 @@ const Ecoloo = () => {
     <>
       <div className="container-fixed">
         <div className="ecoloo-outer">
-          <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecolo-bg.jpg' alt="ecoloo banner" />
+          <img src={Headbanner} alt="ecoloo banner" />
         </div>
         <div className="abt-outer">
           <section>
             <div className="container">
               <Titletag
                 title="A Revolutionary Waste Management Technology"
-                bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+                bgImage={NameBanner}
                 className="pt-5"
               />
               <p className="txt1">
@@ -112,7 +129,7 @@ const Ecoloo = () => {
                 <div class="timeline">
                   <div class="timeline-item left">
                     <div class="circle-img">
-                      <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/eco-1.png' alt="" />
+                      <img src={Circle} alt="" />
                     </div>
                     <div class="timeline-content">
                       <h4>Eco-Friendly</h4>
@@ -126,7 +143,7 @@ const Ecoloo = () => {
 
                   <div class="timeline-item right">
                     <div class="circle-img">
-                      <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/eco-2.png' alt="" />
+                      <img src={Circle1} alt="" />
                     </div>
                     <div class="timeline-content">
                       <h4>Odour-Free</h4>
@@ -140,7 +157,7 @@ const Ecoloo = () => {
 
                   <div class="timeline-item left">
                     <div class="circle-img">
-                      <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/eco-3.png' alt="" />
+                      <img src={Circle2} alt="" />
                     </div>
                     <div class="timeline-content">
                       <h4>Water-Free</h4>
@@ -155,7 +172,7 @@ const Ecoloo = () => {
 
                   <div class="timeline-item right">
                     <div class="circle-img">
-                      <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/eco-4.png' alt="" />
+                      <img src={Circle3} alt="" />
                     </div>
                     <div class="timeline-content">
                       <h4>Sewage-Free</h4>
@@ -169,7 +186,7 @@ const Ecoloo = () => {
 
                   <div class="timeline-item left">
                     <div class="circle-img">
-                      <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/eco-5.png' alt="" />
+                      <img src={Circle4} alt="" />
                     </div>
                     <div class="timeline-content">
                       <h4>Energy-Free</h4>
@@ -314,7 +331,7 @@ const Ecoloo = () => {
                             </div>
                             <div class="col-lg-5">
                               <div class="tab-img">
-                                <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecolo-3.webp' alt="Image Not Found" />
+                                <img src={toilet1} alt="Image Not Found" />
                               </div>
                             </div>
                           </div>
@@ -373,7 +390,7 @@ const Ecoloo = () => {
                             </div>
                             <div class="col-lg-5">
                               <div class="tab-img">
-                                <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/toilet.jpg' alt="toiletimg"/>
+                                <img src={toilet2} alt="toiletimg"/>
                               </div>
                             </div>
                           </div>
@@ -421,7 +438,7 @@ const Ecoloo = () => {
                             </div>
                             <div class="col-lg-5">
                               <div class="tab-img">
-                              <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecolo-1.webp' alt="Image Not Found" />
+                              <img src={toilet3} alt="Image Not Found" />
 
                               </div>
                             </div>

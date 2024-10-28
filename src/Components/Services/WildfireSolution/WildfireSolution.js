@@ -3,6 +3,10 @@ import LeftTextVideo from "../../LeftTextVideo/LeftTextVideo";
 import ListCompTitle from "../../ListComponent/ListCompTitle";
 import "./WildfireSolution.css";
 import ListBoxBg from "../../ListBoxBg/ListBoxBg";
+
+import Fire from '../../../assets/fire.webp'
+
+
 const items = [
   {
     title: "FIRE DANGER INDEX",
@@ -119,7 +123,7 @@ const WildfireSolution = () => {
         </section>
       </div>
       <ListBoxBg 
-        mediaSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fire.webp'
+        mediaSrc={Fire}
         title="DAMAGE ANALYSIS"
         items={item6}
         textcolor="#c6e800"

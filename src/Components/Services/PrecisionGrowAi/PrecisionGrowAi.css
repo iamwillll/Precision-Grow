@@ -2,7 +2,7 @@
     background-color: #293e3e;
 }
 .ai-outer2{
-background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/drone-flies-field-crops.webp');
+background-image: url('../../../assets/drone-flies-field-crops.webp');
 background-attachment: fixed;
 }
 
@@ -17,7 +17,7 @@ background-attachment: fixed;
 }
 .div_p p{
     font-size: 16px;
-    color:#666666;
+    color:#666666;font-weight: 500;
 margin-top:12px;
 text-align: justify;
 }

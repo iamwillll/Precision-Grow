@@ -87,7 +87,7 @@ img {
   position: relative;
   width: 100%;
   height: 653px;
-  background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/eco-bg.webp');
+  background-image: url('../../../assets/eco-bg.webp');
   background-size: cover;
   background-position: center;
   border: 1px solid #ccc;
@@ -178,7 +178,7 @@ img {
 .timeline-item.left .timeline-content {
   margin-right: auto;
   border-radius: 0px 50px 50px 0px;
-  background: #c3da6e url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/leaf-2.png') no-repeat left;
+  background: #c3da6e url('../../../assets/leaf-2.png') no-repeat left;
   background-size: 160px 160px;
   background-position: -7px bottom;
 }
@@ -191,7 +191,7 @@ img {
 .timeline-item.right .timeline-content {
   margin-left: auto;
   border-radius: 50px 0px 0px 50px;
-  background: #c3da6e url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/leaf-2.png') no-repeat right;
+  background: #c3da6e url('../../../assets/leaf-2.png') no-repeat right;
   background-size: 160px 160px;
   background-position: calc(100% - 10px) center;
 }

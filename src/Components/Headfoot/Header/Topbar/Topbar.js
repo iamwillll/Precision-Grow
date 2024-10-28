@@ -11,8 +11,8 @@ const Topbar = () => {
     <div className="top-bar-area text-light">
       <div className="container-fluid">
         <div className="row align-items-center justify-content-between">
-          <div className="col-lg-3">
-            <ul className="d-flex justify-content-around align-items-center addr1">
+          <div className="col-lg-6">
+            <ul className="d-flex addr1">
               <li>
                 <Link to="mailto:mail@precisiongrow.co.in">
                   <i className="fa fa-envelope"></i> <span>mail@precisiongrow.co.in</span>
@@ -25,9 +25,9 @@ const Topbar = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-3 ">
+          <div className="col-lg-6 ">
             <div className="social">
-              <ul className="d-flex justify-content-between">
+              <ul className="d-flex ">
                 <li>
                   <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fprecision_grow" className="twitter" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-twitter"></i>

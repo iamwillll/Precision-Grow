@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #6e8320;
-    padding:5px 0;
+    padding:5px 4%;
 }
 .marquee-bar{
     background-color: #123838;
@@ -13,21 +13,29 @@
     color:orange;
 }
 .marquee-bar .o-no{
-    color:greenyellow;
+    color:#d2ff00;
 }
 a{
     text-decoration: none;
 }
 .top-bar-area ul{
     list-style: none;
-    padding:0!important;
+    padding:0 10px!important;
     margin:0;
 }
+.social {
+    margin-right: 20px;
+  }
+.social ul {float: right;}
+.top-bar-area ul li {
+    display: flex;
+    padding: 0px 12px;
+  }
 .top-bar-area ul li span,.top-bar-area ul li i{
     color:white;
 }
 .top-bar-area .addr1 li i{
-    color:rgb(118, 255, 6);
+    color:#d2ff00;
 }
 @media(max-width:768px){
     .social{

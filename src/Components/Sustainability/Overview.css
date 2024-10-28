@@ -1,8 +1,8 @@
 .overvdotxt .vdotxttinfo{
-    width: 40%;
+    width: 36%;
 }
 .overvdotxt .shapehere{
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/bg-3.png');
+    background-image: url('../../assets/bg-3.png');
 }
 .overvdotxt .vdotxttinfo {
     background-color: #0b182063;
@@ -32,7 +32,7 @@
     height: 100%;
 }
 .wheel-outer{
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/detail-rice.webp');
+    background-image: url('../../assets/detail-rice.webp');
 }
 .wheel-outer section{
     padding: 10% 0;
@@ -40,6 +40,7 @@
 .wheelll{
     animation: spin 30s linear infinite;
 }
+.white p{color: #fff !important;}
 @keyframes spin {
     100%{
         -webkit-transform: rotate(360deg);

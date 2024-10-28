@@ -3,6 +3,11 @@ import Banner from '../Banner/Banner'
 import Titletag from '../Titletag/Titletag';
 import { Link } from 'react-router-dom';
 import './RefundPolicy.css'
+
+import HeadBanner from '../../assets/aerial-drone.webp'
+import NameBanner from '../../assets/planet-earth-global-2.webp'
+
+
 const RefundPolicy = () => {
   const breadcrumbItems = [
     { path: '/', label: 'Home' },
@@ -12,14 +17,14 @@ const RefundPolicy = () => {
     <div>
        <Banner 
         title="Refund Policy"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+        backgroundImage={HeadBanner}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
        <div className='refund-outer'>
         <section>
         <Titletag
             title="Refund Policy"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/planet-earth-global-2.webp'
+            bgImage={NameBanner}
             className="pt-5"
           />
           <div className='container'>

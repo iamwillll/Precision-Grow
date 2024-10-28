@@ -9,6 +9,11 @@ import rs1 from '../../../assets/ease1.png';
 import test from '../../../assets/test.png';
 import rs from '../../../assets/1.jpg';
 import biomob from '../../../assets/bio-mob.png'
+
+import HeadBanner from '../../../assets/aerial-drone.webp'
+import NameBanner from '../../../assets/hero_44.webp'
+
+
 const Biosence = () => {
     const breadcrumbItems = [
         { path: "/", label: "Home" },
@@ -19,7 +24,7 @@ const Biosence = () => {
         <div>
             <Banner
                 title="Biosence"
-                backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/aerial-drone.webp'
+                backgroundImage={HeadBanner}
                 breadcrumbItems={breadcrumbItems}
             />
             <div className="abt-outer">
@@ -27,7 +32,7 @@ const Biosence = () => {
                     <div className="container">
                         <Titletag
                             title="Biosence"
-                            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+                            bgImage={NameBanner}
                             className="pt-5"
                         />
                         <p className="txt1">

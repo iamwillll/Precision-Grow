@@ -2,6 +2,11 @@ import React from "react";
 import LeftTextVideo from "../../LeftTextVideo/LeftTextVideo";
 import Titletag from "../../Titletag/Titletag";
 import ListCompTitle from "../../ListComponent/ListCompTitle";
+import  '../../Services/AgriInsurance/AgriInsurance.css'
+
+
+import Namebanner from '../../../assets/hero_44.webp'
+
 const AgriInsurance = () => {
   const items1 = [
     {
@@ -55,10 +60,10 @@ const AgriInsurance = () => {
           <div className="container">
             <Titletag
               title="Crop Insurance"
-              bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+              bgImage={Namebanner}
               className="pt-5"
             />
-            <div className="row text-white">
+            <div className="row Insurance">
               <div className="col-lg-6">
                 <ListCompTitle items={items1} />
               </div>

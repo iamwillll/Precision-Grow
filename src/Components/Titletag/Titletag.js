@@ -10,8 +10,8 @@ const Titletag = ({ title, bgImage }) => {
 
   return (
     <div className='titletag-container'>
-      <div className='titletag' style={backgroundImageStyle}>
-        <h1 className='fw-bold' ><strong>{title}</strong></h1>
+      <div className='titletag'>
+        <h1 className='fw-bold mask-text'  style={backgroundImageStyle}><strong>{title}</strong></h1>
       </div>
     </div>
   );

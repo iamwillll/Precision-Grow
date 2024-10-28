@@ -1,33 +1,49 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+
+import Footlogo from "../../../assets/foot-logo.png"
+import Saplogo from "../../../assets/sap-b1.webp"
+import Indiaflag from '../../../assets/india-flag.webp'
+import Usflag from '../../../assets/us.png'
+import client1 from '../../../assets/nasscom.png'
+import client2 from '../../../assets/Assocham_India.png'
+import client3 from '../../../assets/cii.png'
+import client4 from '../../../assets/ficci.png'
+import client5 from '../../../assets/ifoam.png'
+import trackter from '../../../assets/7.png'
+
+
+
+
+
+
+
 function Footer() {
   return (
     <>
-    <Link to="https://wa.me/+918097283444?text=Welcome To Precision Grow" class="whatsapp_btn circle-50" data-title="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></Link>
-    <div class="support"> 
-            <p className="text-center">We Make Farming Better With Remote Sensing  Data For Partnership Contact Us At <a href="mailto:mail@precisiongrow.co.in"><span class="hglt">mail@precisiongrow.co.in</span></a></p>
-            <p className="p-0 m-0 text-center">For Support Contact Us For <a href="mailto:support@precisiongrow.co.in"><span class="hglt">support@precisiongrow.co.in</span></a></p>
+    <Link to="https://wa.me/+918097283444?text=Welcome To Precision Grow" className="whatsapp_btn circle-50" data-title="whatsapp" target="_blank"><i className="fa-brands fa-whatsapp"></i></Link>
+    <div className="support"> 
+            <p className="text-center">We Make Farming Better With Remote Sensing  Data For Partnership Contact Us At <a href="mailto:mail@precisiongrow.co.in"><span className="hglt">mail@precisiongrow.co.in</span></a></p>
+            <p className="p-0 m-0 text-center">For Support Contact Us For <a href="mailto:support@precisiongrow.co.in"><span className="hglt">support@precisiongrow.co.in</span></a></p>
             </div>
-      <footer className="footer" style={{backgroundImage:'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/16.png'}}>
+      <footer className="footer" style={{backgroundImage:'../../../assets/16.png'}}>
         <div className="foot-newsletter">
             
         </div>
         <div className="container">
-          <h2 className="text-whitee 
-          text-center mb-5">
-            Agriculture Meets Technology with
+          <h2 className="text-whitee  text-center">
+            Agriculture Meets Technology with<br/>
             Precision Grow
           </h2>
           <div className="row">
             <div className="col-md-12 col-lg-4">
               <div className="widget1">
                 <div className="footerlogo">
-                  <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/foot-logo.png' className="img-fluid mb-4 rounded" loading="lazy" alt="" />
+                  <img src={Footlogo} className="img-fluid mb-4 rounded"  alt="" />
                 </div>
-                <h5>Powered By</h5>
-                <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/sap-b1.webp
-                ' alt="sap icon" className="w-50 rounded mb-4"/>
+                <h5 className="power">Powered By</h5>
+                <img src={Saplogo} alt="sap icon" className="sap w-45 rounded mb-4"/>
                 <div className="socialLinks">
                   <ul>
                     <li>
@@ -37,7 +53,7 @@ function Footer() {
                     </li>
                     <li>
                       <Link to="https://x.com/i/flow/login?redirect_after_login=%2Fprecision_grow">
-                      <i class="fa-brands fa-square-x-twitter"></i>
+                      <i className="fa-brands fa-square-x-twitter"></i>
                       </Link>
                     </li>
                     <li>
@@ -52,22 +68,22 @@ function Footer() {
                     </li>
                     <li>
                       <Link to="https://www.youtube.com/channel/UCt1nu8YiUMjnvckNLfepa5g">
-                        <i class="fa-brands fa-youtube"></i>
+                        <i className="fa-brands fa-youtube"></i>
                       </Link>
                     </li>
                     <li>
                       <Link to="https://precisiongrowindia.blogspot.com/">
-                        <i class="fa-brands fa-blogger-b"></i>
+                        <i className="fa-brands fa-blogger-b"></i>
                       </Link>
                     </li>
                     <li>
                       <Link to="https://precisiongrow.co.in/">
-                        <i class="fa-brands fa-flickr"></i>
+                        <i className="fa-brands fa-flickr"></i>
                       </Link>
                     </li>
                     <li>
                       <Link to="https://soundcloud.com/precision-grow?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
-                        <i class="fa-brands fa-soundcloud"></i>
+                        <i className="fa-brands fa-soundcloud"></i>
                       </Link>
                     </li>
                     
@@ -77,9 +93,23 @@ function Footer() {
             </div>
             <div className="col-md-6 col-lg-5 footer-here-is">
               <h5>Get in Touch and Start Your Journey to Success</h5>
-              <div className="row">
+              <div className="row mt-4">
                 <div className="col-md-2">
-                  <i class="fa-solid fa-location-dot"></i>
+                <i class="fa fa-map-marker"><div></div></i>
+                </div>
+                <div className="col-md-10 text-white">
+                  <ul>
+                    <li><h6>Corporate Office :</h6></li>
+                    <li>
+                    Unit No 22, Building No. 2(A3), Sector 1,
+Millennium Business Park, Mahape, Navi Mumbai, 400710
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row mt-4">
+                <div className="col-md-2">
+                <i class="fa fa-map-marker"><div></div></i>
                 </div>
                 <div className="col-md-10 text-white">
                   <ul>
@@ -93,7 +123,7 @@ function Footer() {
               </div>
               <div className="row mt-4">
                 <div className="col-md-2">
-                  <i class="fa-solid fa-location-dot"></i>
+                <i class="fa fa-map-marker"><div></div></i>
                 </div>
                 <div className="col-md-10 text-white">
                   <ul>
@@ -105,12 +135,12 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-              <div class="row mt-5 text-white">
-                <div class="col-lg-6 mb-5 col-md-12">
+              <div className="row mt-5 text-white">
+                {/* <div className="col-lg-6 mb-5 col-md-12">
                   <ul>
                     <li>
                       <img
-                        class="imgh"
+                        className="imgh"
                         src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/india-flag.webp"
                         alt=""
                         loading="lazy"
@@ -125,11 +155,11 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-5">
+                <div className="col-lg-6 col-md-12 mb-5">
                   <ul>
                     <li>
                       <img
-                        class="imgh"
+                        className="imgh"
                         src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/us.png"
                         alt=""
                         loading="lazy"
@@ -140,7 +170,37 @@ function Footer() {
                       <span>PHONE</span> : +1 424-239-0105
                     </li>
                   </ul>
-                </div>
+                </div> */}
+                <ul className="country-flag inline-block">
+                                        <li>
+                                            <div className="icon-flag">
+                                            <img className="imgh" src={Indiaflag}  alt="India" />
+                                          </div>
+                                          <div className="content">
+                                          <p className=""><strong>INDIA</strong></p>
+
+                                          <strong>Phone :</strong>
+                                          <a href="tel:912248888888">+91 22 48888888</a> / <a href="tel:912246165798">46165798</a>
+                                         
+                                          <div className="content mt-3">
+                                              <strong>Mobile :</strong>
+                                              <a href="tel:918097283444">+91 8097283444</a>
+                                          </div>
+                                          </div>
+                                        </li>
+                                            <li>
+                                       
+                                       <div className="icon-flag">
+                                       <img className="imgh" src={Usflag} width="45px" alt="us" />
+                                     </div>
+                                     <div className="content">
+                                     <p className=""><strong>USA</strong></p>
+                                         <strong>Phone :</strong>
+                                         <a href="tel:0014242390105">+1 424-239-0105</a>
+                                     </div>
+                                     </li>
+                                         
+                                    </ul>
               </div>
             </div>
 
@@ -178,14 +238,14 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div class="footer-certified text-center">
-                <div class="row">
+          <div className="footer-certified text-center">
+                <div className="row">
                     <ul>
-                        <li><img class="logo-certi" src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/nasscom.png' alt="nasscom"/></li>
-                        <li><img class="logo-certi" src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/Assocham_India.png'alt="Assocham_India"/></li>
-                        <li><img class="logo-certi" src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/cii.png' alt="cii"/></li>
-                        <li><img class="logo-certi" src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ficci.png' alt="ficci"/></li>
-                        <li><img class="logo-certi" src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ifoam.png' alt="ifoam"/></li>
+                        <li><img className="logo-certi" src={client1} alt="nasscom"/></li>
+                        <li><img className="logo-certi" src={client2} alt="Assocham_India"/></li>
+                        <li><img className="logo-certi" src={client3}  alt="cii"/></li>
+                        <li><img className="logo-certi" src={client4}  alt="ficci"/></li>
+                        <li><img className="logo-certi" src={client5} alt="ifoam"/></li>
                     </ul>
 
                 </div>
@@ -194,8 +254,8 @@ function Footer() {
         <div className="copyRightArea">
           <div className="container">
             <div className="row">
-              <div className="col-md-12 text-center text-md-left mb-3 mb-md-0">
-                <p>
+              <div className="col-md-12 text-center text-md-left mb-3 mb-md-0 zindex" >
+                <p className="">
                   &copy; 2024. All Rights Reserved by <span>Precision Grow (A Unit of
                   Tech Visit IT Pvt Ltd)</span>
                 </p>
@@ -203,8 +263,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div class="shape-right-bottom">
-            <img src='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/7.png' alt="Image Not Found"/>
+        <div className="shape-right-bottom">
+            <img src={trackter} alt="Image Not Found"/>
         </div>
       </footer>
     </>

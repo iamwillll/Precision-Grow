@@ -3,6 +3,10 @@ import './ProductTraceability.css'
 import LeftTextVideo from '../../LeftTextVideo/LeftTextVideo'
 import Titletag from '../../Titletag/Titletag'
 import ListComponent from '../../ListComponent/ListComponent'
+
+import Namebanner from '../../../assets/hero_44.webp'
+
+
 const ProductTraceability = () => {
     // Define lists for different columns
 const listItems1 = [
@@ -33,7 +37,7 @@ const listItems1 = [
         <div className='container'>
         <Titletag
             title="Benefits"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/hero_44.webp'
+            bgImage={Namebanner}
             className="pt-5"
           />
           <div className='row'>

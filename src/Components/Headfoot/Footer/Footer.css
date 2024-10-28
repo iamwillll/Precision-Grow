@@ -43,6 +43,13 @@ img {
   background-size: cover;
   position: relative;
 }
+.footer-certified ul{z-index: 999;}
+.footer h2{
+  text-align: center;
+  font-size: 39px;
+  margin-top: 40px;
+  margin-bottom: 5%;font-weight: 600;
+}
 .support {
   background: #6f850b;
   text-align: center;
@@ -51,10 +58,14 @@ img {
   font-size: 20px;
   border-bottom: 1px solid #6e8320;
   border-bottom: 1px solid #7f9920;
-  padding: 10px 0;
+  padding: 15px 0;
   position: sticky;
   bottom: 0;
   z-index: 22;
+}
+.support p {
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 .support span {
   color: #d5ff05;
@@ -67,23 +78,28 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  opacity: 0.3;
+  opacity: 0.2;
   z-index: 0;
 }
 .footerlogo {
-  width: 70%;
-}
+  width: 60%}
 
 .footer .widget1 p {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 26px;
 }
-
+.power {
+  margin-bottom:20px !important;
+  color: #fff799 !important;margin-left: 40px !important;
+  font-size: 18px !important;margin-top: 25px;font-weight: 500;
+}
 /* .footer .socialLinks {
 margin-top: 28px;
 } */
-
+.w-45{width: 45%;}
+.sap{background: #fff;
+  padding: 7px;}
 .socialLinks ul li {
   display: inline-block;
   margin-bottom: 9px;
@@ -91,6 +107,9 @@ margin-top: 28px;
 /* .socialLinks {
   padding-bottom: 19px;
 } */
+.socialLinks {
+  margin-top:40px;
+}
 .logosocial {
   display: flex;
 }
@@ -181,23 +200,23 @@ footer .logo {
 
 .footer h5 {
   font-weight: 500;
-  margin-bottom: 12px;
+  margin-bottom: 35px;
   text-transform: capitalize;
   font-weight: 600;
   color: #fff;
-  font-size: 21px;
+  font-size: 22px;
 }
 
 .footer .widget4 ul li a {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   text-transform: capitalize;
   margin-bottom: 13px;
   display: block;
 }
 
 .footer .widget4 ul li a:hover {
-  color: #ffb606;
+  color: #fff799;
 }
 
 .footer .widget4 h5 {
@@ -221,24 +240,32 @@ footer .logo {
   color: #beff00;
 }
 .imgh {
-  width: 40px;
+  width: 45px;
   margin-right: 20px;
 }
 .footer-here-is i {
-  color: white;
-  padding: 11px 12px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
   border-radius: 50%;
-  border: 1px dashed green;
-  font-size: 20px;
-  background: #f1d30038;
+  margin-right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+  font-size: 20px;color: #fff;
 }
 .footer-here-is h6 {
-  color: #f5d400;
-  text-decoration: underline;
+  display: block;
+  text-transform: uppercase;
+  color: #fff799;margin-bottom:10px;
+  font-size: 16px;font-weight:600;
 }
 .text-whitee {
   color: white;
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
   font-size: 52px;
 }
 .whatsapp_btn {
@@ -256,8 +283,30 @@ footer .logo {
   z-index: 111;
   padding-left: 13px;
 }
+.icon-flag {margin-right:0px;}
+.country-flag  li{margin-right:10px;display: flex;} 
+.footer .content{text-align:start;}
+.footer .content p {  display: block;margin-bottom: 9px;
+  text-transform: uppercase;
+  color: #fff799;font-weight: 600;
+  font-size: 16px;}
+.footer .content strong {
+  display: block;
+  text-transform: uppercase;
+  color: #fff799;
+  font-size: 16px;font-weight:600;
+}
+.footer .content a{color: #fff;}
+.footer-certified{margin-top: 40px;}
+.zindex{z-index: 99;}
+
+
 @media (max-width: 600px) {
   .text-whitee {
     font-size: 27px;
   }
+  .country-flag {display: block; margin-bottom: 20px;}
+  .country-flag li{margin-bottom: 30px;}
+  .footer h5{margin-top: 30px;}
+
 }

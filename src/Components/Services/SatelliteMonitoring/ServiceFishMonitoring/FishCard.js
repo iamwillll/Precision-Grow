@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./FishCard.css";
+import Fishcard1 from '../../../../assets/automatic-identification-system.webp'
+import Fishcard2 from '../../../../assets/vv_april2024.webp'
+import Fishcard3 from '../../../../assets/satellite-imagery-integration.jpg'
+
+
 
 const FishCard = () => {
   // Mock API data
@@ -10,7 +15,7 @@ const FishCard = () => {
       title: "Automatic Identification System (AIS)",
       description:
         "This data is captured by ground stations and satellites, enabling continuous tracking of vessels even in the most remote oceanic regions.",
-      imageSrc: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/automatic-identification-system.webp',
+      imageSrc: Fishcard1,
       link: "/automatic_Identification_System",
     },
     {
@@ -18,7 +23,7 @@ const FishCard = () => {
       title: "Vessel Monitoring System (VMS)",
       description:
         "Our Vessel Monitoring System (VMS) operates akin to AIS (Automatic Identification System), with a primary focus on regulatory oversight by government bodies and fisheries authorities.",
-      imageSrc: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/vv_april2024.webp',
+      imageSrc: Fishcard2,
       link: "/vessel_monitoring_system",
     },
     {
@@ -26,7 +31,7 @@ const FishCard = () => {
       title: "Satellite Imagery Integration",
       description:
         "Tracking commercial fishing activity is vital, yet relying solely on AIS and VMS may overlook a substantial portion of global fishing operations.",
-      imageSrc: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/satellite-imagery-integration.jpg',
+      imageSrc:  Fishcard1,
       link: "/satellite_imagery_integration",
     },
   ];

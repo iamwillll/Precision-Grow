@@ -1,13 +1,15 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import './VideoSlider.css'; // Import custom CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import './VideoSlider.css'; 
+import Banner1 from '../../assets/v1.mp4';
+import Banner2 from '../../assets/satellite-fishing.mp4'; 
 
 const VideoSlider = () => {
   // Hardcoded data
   const carouselItems = [
     {
       id: 1,
-      videoSrc: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/v1.mp4',
+      videoSrc: Banner1, 
       title: 'Revolutionize Your Farming With',
       title1: 'Precision Grow',
       description: '(A Unit Of Tech Visit Pvt Ltd)',
@@ -17,7 +19,7 @@ const VideoSlider = () => {
     },
     {
       id: 2,
-      videoSrc: 'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/satellite-fishing.mp4',
+      videoSrc: Banner2, 
       title: 'Revolutionize Your Fishing With',
       title1: 'Precision Grow',
       description: '(A Unit Of Tech Visit Pvt Ltd)',
@@ -50,7 +52,7 @@ const VideoSlider = () => {
               Your browser does not support the video tag.
             </video>
             <div className="carousel-caption">
-              <div className="text-center">
+              <div className="text-center text-overlay">
                 <h1>
                   <strong>{item.title}<br /></strong>
                   <span style={{ color: item.styles.titleColor }}>

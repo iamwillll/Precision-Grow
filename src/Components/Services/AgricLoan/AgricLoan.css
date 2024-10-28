@@ -5,7 +5,7 @@
 }
 
 .loanouter-div {
-    background-image: url('https://webpagecdnstorage.blob.core.windows.net/precisiongrow/detail-rice.webp');
+    background-image: url('../../../assets/detail-rice.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
