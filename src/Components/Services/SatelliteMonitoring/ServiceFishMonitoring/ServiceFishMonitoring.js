@@ -7,7 +7,7 @@ import FishCard from './FishCard'
 import FishCardSlider from '../../../VideoSlider/FishCardSlider'
 import Headbanner from '../../../../assets/fantastic-seascape.webp'
 import FishBg from '../../../../assets/fish.webp'
-
+import fishMontVdo from '../../../../assets/fish.mp4'
 
 
 const ServiceFishMonitoring = () => {
@@ -18,7 +18,7 @@ const ServiceFishMonitoring = () => {
       description="Revolutionizing Ocean Monitoring and Analysis"
       buttonText="Contact Us"
       buttonLink="/contact"
-      videoSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fish.mp4'
+      videoSrc={fishMontVdo}
       />
    
     <div className='fishdivouter'>

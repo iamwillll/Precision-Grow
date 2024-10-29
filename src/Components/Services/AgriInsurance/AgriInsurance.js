@@ -3,7 +3,7 @@ import LeftTextVideo from "../../LeftTextVideo/LeftTextVideo";
 import Titletag from "../../Titletag/Titletag";
 import ListCompTitle from "../../ListComponent/ListCompTitle";
 import  '../../Services/AgriInsurance/AgriInsurance.css'
-
+import agriinsurance from '../../../assets/agri-insurance.mp4'
 
 import Namebanner from '../../../assets/hero_44.webp'
 
@@ -52,7 +52,7 @@ const AgriInsurance = () => {
           description="Seize control of your farm's future with Precision Grow Agri-Insurance. Contact our friendly team today for a personalized quote and secure your harvest for a prosperous future."
           buttonText="Get Quote"
           buttonLink="/contact"
-          videoSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/agri-insurance.mp4'
+          videoSrc={agriinsurance}
         />
       </div>
       <div className="ai-outer">

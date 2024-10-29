@@ -81,7 +81,7 @@ const Cropadvisory = () => {
                                             alt="Card"
                                         />
                                         <div className="card-body">
-                                            <h4 className="card-title" style={{color: '#575701'}}>{card.title}</h4>
+                                            <h4 className="card-title" style={{color: '#12170a',padding:'20px 0px'}}>{card.title}</h4>
                                             <p className="card-text">{card.description}</p>
                                         </div>
                                     </div>

@@ -190,7 +190,7 @@ const Farmboundary = () => {
               comprehensive global agricultural solutions.
             </p>
             <div className="row">
-              <div className="col-md-4 mb-3">
+              <div className="col-lg-4 col-md-12 mb-3">
                 <div className="card text-center">
                   <div className="card-body">
                     <img
@@ -209,7 +209,7 @@ const Farmboundary = () => {
                 </div>
               </div>
 
-              <div className="col-md-4 mb-3">
+              <div className="col-lg-4 col-md-12 mb-3">
                 <div className="card text-center">
                   <div className="card-body">
                     <img
@@ -228,7 +228,7 @@ const Farmboundary = () => {
                 </div>
               </div>
 
-              <div className="col-md-4 mb-3">
+              <div className="col-lg-4 col-md-12 mb-3">
                 <div className="card text-center">
                   <div className="card-body">
                     <img

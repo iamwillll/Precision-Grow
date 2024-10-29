@@ -97,4 +97,7 @@
         font-size: 35px;}    
         .listtitle {
           font-size: 35px;}
+          .content-box p {
+            margin-bottom: 8px;
+        }
   }

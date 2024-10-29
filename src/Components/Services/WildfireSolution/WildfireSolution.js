@@ -3,7 +3,7 @@ import LeftTextVideo from "../../LeftTextVideo/LeftTextVideo";
 import ListCompTitle from "../../ListComponent/ListCompTitle";
 import "./WildfireSolution.css";
 import ListBoxBg from "../../ListBoxBg/ListBoxBg";
-
+import wildfire from '../../../assets/wildfire.mp4'
 import Fire from '../../../assets/fire.webp'
 
 
@@ -99,7 +99,7 @@ const WildfireSolution = () => {
         description="Precision Grow offers the first global wildfire intelligence solution, including risk assessment, early detection, real-time monitoring, and damage analysis with data from 20+ satellites."
         buttonText="Contact Us"
         buttonLink="/contact"
-        videoSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/wildfire.mp4'
+        videoSrc={wildfire}
       />
       <div className="Wil-outer-div">
         <section>

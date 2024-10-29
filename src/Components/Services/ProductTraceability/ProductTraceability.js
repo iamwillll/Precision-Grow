@@ -3,7 +3,7 @@ import './ProductTraceability.css'
 import LeftTextVideo from '../../LeftTextVideo/LeftTextVideo'
 import Titletag from '../../Titletag/Titletag'
 import ListComponent from '../../ListComponent/ListComponent'
-
+import Pdotracevdo from '../../../assets/product-traceability.mp4'
 import Namebanner from '../../../assets/hero_44.webp'
 
 
@@ -30,7 +30,7 @@ const listItems1 = [
       description="Provide your products with a feature to allow customers track the whole journey of the product and increase your product trust."
       buttonText="Contact Us"
       buttonLink="/contact"
-      videoSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/product-traceability.mp4'
+      videoSrc={Pdotracevdo}
       />
        <div className='ai-outer'>
         <section>

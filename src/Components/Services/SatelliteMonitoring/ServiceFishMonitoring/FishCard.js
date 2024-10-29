@@ -31,7 +31,7 @@ const FishCard = () => {
       title: "Satellite Imagery Integration",
       description:
         "Tracking commercial fishing activity is vital, yet relying solely on AIS and VMS may overlook a substantial portion of global fishing operations.",
-      imageSrc:  Fishcard1,
+      imageSrc:  Fishcard3,
       link: "/satellite_imagery_integration",
     },
   ];

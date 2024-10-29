@@ -7,10 +7,10 @@
     gap: 20px; /* Adjust spacing between cards */
   }
 .vision p{
-    font-size:17px;color:#151e10;margin: 0;hyphens: inherit;
+    font-size:17px;color:#151e10;margin: 0;hyphens: auto;
 }
 .mission p{
-    font-size:17px;color:#fff;margin: 0;hyphens: inherit;
+    font-size:17px;color:#fff;margin: 0;hyphens: auto;
 }
 /* .icon span{
     margin-left: 20px;

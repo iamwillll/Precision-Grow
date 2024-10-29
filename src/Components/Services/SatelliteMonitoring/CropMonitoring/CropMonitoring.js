@@ -3,11 +3,11 @@ import LeftTextVideo from '../../../LeftTextVideo/LeftTextVideo';
 import ListComponent from '../../../ListComponent/ListComponent';
 import Titletag from '../../../Titletag/Titletag';
 import ListBoxBg from '../../../ListBoxBg/ListBoxBg';
-import './CropMonitoring.css'; // Import the custom CSS
-
 import Headbanner from '../../../../assets/hero_44.webp'
 import Parametr from '../../../../assets/parameters.webp'
 import satellite from '../../../../assets/satellite.webp'
+import cropmonitoringg from '../../../../assets/satellite-crop-monitoring.mp4'
+
 
 
 
@@ -57,7 +57,7 @@ const CropMonitoring = () => {
         buttonText1="Sign Up (Europe)"
         buttonLink="/contact"
         buttonLink1="/contact"
-        videoSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/satellite-crop-monitoring.webm'
+        videoSrc={cropmonitoringg}
       />
       <div className='ai-outer'>
         <section>
@@ -126,7 +126,6 @@ const CropMonitoring = () => {
   bgcolor="rgba(43, 62, 62, 0.82)"  // Background color of the content box
   mediaType="Image"  // Use 'image' for image or 'video' for video
 /> 
-<img className="innersat" src={satellite} alt="s" />
  </div>
     </>
   );

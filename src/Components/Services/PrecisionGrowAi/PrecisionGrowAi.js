@@ -3,7 +3,7 @@ import './PrecisionGrowAi.css'
 import LeftTextVideo from '../../LeftTextVideo/LeftTextVideo'
 import Titletag from '../../Titletag/Titletag'
 import ListComponent from '../../ListComponent/ListComponent'
-
+import Pgaivdo from '../../../assets/agro-ai.mp4'
 import Namebanner from '../../../assets/28.webp'
 
 
@@ -35,7 +35,7 @@ const listItems1 = [
       description="Highly Advance Artificial Intelligence System which help you to do better farming"
       buttonText="Contact Us"
       buttonLink="/contact"
-      videoSrc='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/agro-ai.webm'
+      videoSrc={Pgaivdo}
       />
       <div className='ai-outer'>
         <section>

@@ -90,13 +90,11 @@ img {
   margin-top: 26px;
 }
 .power {
-  margin-bottom:20px !important;
-  color: #fff799 !important;margin-left: 40px !important;
-  font-size: 18px !important;margin-top: 25px;font-weight: 500;
+  margin-bottom:11px !important;
+  color: #fff799 !important;
+  font-size: 18px !important;font-weight: 500;
 }
-/* .footer .socialLinks {
-margin-top: 28px;
-} */
+
 .w-45{width: 45%;}
 .sap{background: #fff;
   padding: 7px;}
@@ -108,7 +106,7 @@ margin-top: 28px;
   padding-bottom: 19px;
 } */
 .socialLinks {
-  margin-top:40px;
+  margin: 7px 0px 26px;
 }
 .logosocial {
   display: flex;
@@ -200,7 +198,6 @@ footer .logo {
 
 .footer h5 {
   font-weight: 500;
-  margin-bottom: 35px;
   text-transform: capitalize;
   font-weight: 600;
   color: #fff;
@@ -300,13 +297,31 @@ footer .logo {
 .footer-certified{margin-top: 40px;}
 .zindex{z-index: 99;}
 
-
+@media(max-width:768px){
+  .footer h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+.footerlogo {
+  width: 42%;
+}
+.power {
+  margin-bottom: -17px !important;
+}
+}
 @media (max-width: 600px) {
-  .text-whitee {
-    font-size: 27px;
+  .footer h2 {
+    font-size: 19px;
   }
+  .footerlogo {
+    width: 55%;
+}
   .country-flag {display: block; margin-bottom: 20px;}
   .country-flag li{margin-bottom: 30px;}
-  .footer h5{margin-top: 30px;}
-
+footer .country-flag{
+  padding: 10px;
+}
+.footer .widget4 h5 {
+  margin-bottom: 0px;
+}
 }

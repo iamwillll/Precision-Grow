@@ -4,7 +4,7 @@ import Titletag from "../../Titletag/Titletag";
 import "./Ecrop.css";
 import ListComponent from "../../ListComponent/ListComponent";
 import ListCompTitle from "../../ListComponent/ListCompTitle";
-
+import ecrop from '../../../assets/ecrop.mp4'
 import HeadBanner from '../../../assets/aerial-drone.webp'
 import NameBanner from '../../../assets/hero_44.webp'
 
@@ -111,7 +111,7 @@ const Ecrop = () => {
       <div className="ecrop-outer3">
         <div className="shapehere"></div>
         <video autoPlay muted loop className="bg-video">
-          <source src={'https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ecrop.mp4'} type="video/mp4" />
+          <source src={ecrop} type="video/mp4" />
           {/* <source src={bgvideo} type="video/mp4" /> */}
           Your browser does not support the video tag.
         </video>
@@ -126,10 +126,10 @@ const Ecrop = () => {
             parameters. The data collected by e-Crop includes :
           </p>
           <div className="row text-start">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6 col-6">
               <ListComponent items={listItems7} />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6 col-6">
               <ListComponent items={listItems8} />
             </div>
           </div>

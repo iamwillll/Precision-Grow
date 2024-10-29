@@ -152,16 +152,17 @@ a.nav-link.ex-link1:hover{
 
 @media (max-width: 768px) {
     .logo {
-        width: 32%;
+        width: 100%;
         margin: auto;
     }
 
     .navbar-toggler {
         position: absolute;
-        top: 15px;
+        top: 0px;
         border: none;
-        background: #e6e6e6;
+        /* background: #e6e6e6; */
   margin-top: 7px;
+  right:15%
     }
     .carousel-indicators{display: none;}
     .dropdown-menu {

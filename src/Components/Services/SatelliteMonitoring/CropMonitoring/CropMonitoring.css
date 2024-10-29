@@ -1,34 +1,4 @@
-.cropsateimg .shapehere {
-    display: none;
-}
 
 .cropsateimg {
     position: relative;
-}
-
-.innersat {
-    position: absolute;
-    top: 10%;
-    right: 20%;
-    background-position: top;
-    animation: rotateAndSlightMove 30s infinite linear;
-}
-
-@keyframes rotateAndSlightMove {
-
-    100% {
-        transform: rotate(360deg); /* Return to original position with rotation */
-    }
-}
-@media(max-width:768px){
-    .innersat {
-        width: 16%;
-    }
-}
-@media(max-width:600px){
-    .innersat {
-        width: 25%;
-        top: 5%;
-        right: 7%;
-    }
 }

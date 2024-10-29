@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 import './Subnavbar.css'; // Import the CSS file
 import Topbar from '../Topbar/Topbar';
 import place from '../../../../assets/great-place-to-work.png';
-import Logo from '../../../../assets/logo.webp'
+import Logo from '../../../../assets/foot-logo.webp'
 import SDG from '../../../../assets/sdg-india.png'
-
-
 
 
 const Subnavbar = () => {
@@ -36,6 +34,7 @@ const Subnavbar = () => {
 
   return (
     <>
+
       <Topbar />
       <nav className="navbar navbar-expand-lg bg-white sticky-top">
         <div id="topIcon" className="icon-fixed">
@@ -44,7 +43,6 @@ const Subnavbar = () => {
         <div className="container-fluid">
         <div className="brand-logo">
         <Link className="nav-link active" aria-current="page" to="/" onClick={() => setIsNavbarOpen(false)}><img className="logo" loading="lazy" src={Logo} alt="logo" /></Link>
-          <p className=''>ISO/IEC 27001:2022 Certified</p>
           </div>
           <button
             className="navbar-toggler"

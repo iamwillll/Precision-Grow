@@ -45,4 +45,7 @@
         .fishmont.d-flex {
             display: block !important;
           }
+          .box1 .fish-in {
+            bottom: -1%;
+        }
 }

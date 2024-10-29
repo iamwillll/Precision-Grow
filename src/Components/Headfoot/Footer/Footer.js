@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-import Footlogo from "../../../assets/foot-logo.png"
+import Footlogo from "../../../assets/foot-logo.webp"
 import Saplogo from "../../../assets/sap-b1.webp"
 import Indiaflag from '../../../assets/india-flag.webp'
 import Usflag from '../../../assets/us.png'
@@ -43,7 +43,7 @@ function Footer() {
                   <img src={Footlogo} className="img-fluid mb-4 rounded"  alt="" />
                 </div>
                 <h5 className="power">Powered By</h5>
-                <img src={Saplogo} alt="sap icon" className="sap w-45 rounded mb-4"/>
+                <img src={Saplogo} alt="sap icon" className="sap footerlogo rounded mb-4"/>
                 <div className="socialLinks">
                   <ul>
                     <li>
@@ -93,7 +93,7 @@ function Footer() {
             </div>
             <div className="col-md-6 col-lg-5 footer-here-is">
               <h5>Get in Touch and Start Your Journey to Success</h5>
-              <div className="row mt-4">
+              <div className="row">
                 <div className="col-md-2">
                 <i class="fa fa-map-marker"><div></div></i>
                 </div>
@@ -136,41 +136,7 @@ Millennium Business Park, Mahape, Navi Mumbai, 400710
                 </div>
               </div>
               <div className="row mt-5 text-white">
-                {/* <div className="col-lg-6 mb-5 col-md-12">
-                  <ul>
-                    <li>
-                      <img
-                        className="imgh"
-                        src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/india-flag.webp"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <span style={{color:'#f5d400',textDecoration:'underline'}}>India</span>
-                    </li>
-                    <li>
-                      <span>PHONE</span> : +91 22 48888888 / 46165798
-                    </li>
-                    <li>
-                      <span>MOBILE</span> : +91 8097283444
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-lg-6 col-md-12 mb-5">
-                  <ul>
-                    <li>
-                      <img
-                        className="imgh"
-                        src="https://webpagecdnstorage.blob.core.windows.net/precisiongrow/us.png"
-                        alt=""
-                        loading="lazy"
-                      />
-                      <span style={{color:'#f5d400',textDecoration:'underline'}}>USA</span>
-                    </li>
-                    <li>
-                      <span>PHONE</span> : +1 424-239-0105
-                    </li>
-                  </ul>
-                </div> */}
+             
                 <ul className="country-flag inline-block">
                                         <li>
                                             <div className="icon-flag">

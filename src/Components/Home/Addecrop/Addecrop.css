@@ -81,8 +81,8 @@ p.t1{
     }
     .agri ul li {
         width: 50%;
-        left: 26%;
-        top: -5px;
+        left: 5%;
+        top: 38px;
         padding: 0px 10px 5px 5%;
     }
     .logo-list img{
@@ -94,6 +94,12 @@ p.t1{
     }
     .ceritified-icon {
         bottom: 2%;
+    }
+    .ceritified-icon {
+        margin-top: 5%;
+    }
+    .logo-list {
+        margin-top: 9%;
     }
 }
 @media(max-width:600px){

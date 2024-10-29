@@ -33,13 +33,14 @@ padding:10% 0;
   .ecrop-outer3 .content-overlay {
     position: absolute;
     bottom: 0%;
-    left: 10%;
+    left: 2%;
     color: white;
     font-size: 19px;
     background-color: #00000094;
-    width: 40%;
+    width: 64%;
     padding: 20px;
-    height:auto
+    height: auto;
+    z-index: 1;
 }
 
 .ecrop-outer3 .content-overlay h1{
@@ -105,6 +106,9 @@ padding:10% 0;
 @media(max-width:768px){
     .ecrop-outer3 .content-overlay {
         width: 81%;
+    }
+    .ecrop-outer3 section h5{
+        padding: 0;
     }
 }
 @media(max-width:600px){

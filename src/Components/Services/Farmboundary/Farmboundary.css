@@ -53,7 +53,7 @@
 .farmB3 {
     position: relative; /* Establish a positioning context for the child elements */
 }
-.card-body h4 {
+.farmbounday1 .card-body h4 {
   color: #fff58f;
   margin-bottom: 26px;
   margin-top: 10px;
@@ -91,12 +91,7 @@
     padding:10px 0;
     font-size: 20px;
 }
-@media(max-width:768px){
-    .overlay-contentF {
-        left: 50%;
-        width: 100%;
-    }
-}
+
 .direct {
     text-align: center;
     color: #c3d416;
@@ -238,10 +233,11 @@ font-size: 22px;font-weight: 400;margin-bottom: 15px;}
 
 }
 
-@media (max-width: 768px) {
+
+@media(max-width:768px){
   .one {
     width: 100%;
-    text-align: center;
+    text-align: start;
     padding: 10px;
   }
 
@@ -250,8 +246,21 @@ font-size: 22px;font-weight: 400;margin-bottom: 15px;}
   }
   .model-work p {padding: 0% 3%;}
   .farmoB3 .greentitle {width:100%;font-size: 32px;margin-top: 26px;}
-}
+  .overlay-contentF {
+      left: 50%;
+      width: 100%;
+  }
+  .timeline-in ul li::after {
+    left: -1.4%;
+  top:7%;}
+    .hr-line {
+      width: .5rem;
+      height: 100%;
 
+      top: 0px;
+      left: 0%;
+  }
+}
 @media (max-width: 600px) {
   .red-outer-div{padding: 0px 40px;}
   .key {font-size: 28px;margin-bottom: 30px;}

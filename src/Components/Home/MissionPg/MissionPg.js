@@ -23,7 +23,7 @@ const MissionPg = () => {
               </div>
             </div>
 
-            <div className="col-lg-5 offset-lg-1 col-md-6  col-sm-12">
+            <div className="col-lg-5 offset-lg-1 col-md-12  col-sm-12">
               <div className="inner-mission-info" data-aos="fade-left" data-aos-duration="3000">
                 <h1> Welcome To <br/><span>Precison Grow</span> </h1>
                 <p>

@@ -48,7 +48,15 @@ font-size: 53px;
       transform: rotate(-2deg);
     }
   }
-
+@media(max-width:768px){
+  .miss-vis ul {
+    margin-left: -0%;
+    margin-top: 119px;
+}
+.inner-mission-info {
+  padding-top: 0%;
+}
+}
 @media(max-width:600px){
   .in-left-img img{
     display: none;
