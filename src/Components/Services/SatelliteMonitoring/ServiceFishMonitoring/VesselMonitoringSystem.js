@@ -3,6 +3,9 @@ import Banner from '../../../Banner/Banner'
 import Titletag from '../../../Titletag/Titletag';
 import './VesselMonitoringSystem.css'
 import GridSection from './GridSection/GridSection';
+import topviewcoast from '../../../../assets/top-view-coast.webp'
+import fantasticseascape from '../../../../assets/fantastic-seascape.webp'
+import vissel from '../../../../assets/vissel.webp'
 const VesselMonitoringSystem = () => {
     const breadcrumbItems = [
         { path: '/', label: 'Home' },
@@ -12,7 +15,7 @@ const VesselMonitoringSystem = () => {
     <>
       <Banner 
         title="Vessel Monitoring System (VMS)"
-        backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/top-view-coast.webp'
+        backgroundImage={topviewcoast}
         breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
       />
         
@@ -21,7 +24,7 @@ const VesselMonitoringSystem = () => {
         <div className='container'>
         <Titletag
             title="Vessel Monitoring System (VMS)"
-            bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fantastic-seascape.webp'
+            bgImage={fantasticseascape}
             className="pt-5"
           />
           <p className='txt1'>
@@ -35,7 +38,7 @@ const VesselMonitoringSystem = () => {
 
   <section>
   <GridSection 
-        image='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/vissel.webp' 
+        image={vissel} 
         title="Vessel Registries Compilation" 
         content="Each month, we meticulously gather data from over 30 publicly accessible vessel registries. This meticulous process enables us to construct a robust database containing vital vessel details such as ship name, call sign, IMO number, dimensions (length and tonnage), engine power, authorization status, and ownership information."
       />

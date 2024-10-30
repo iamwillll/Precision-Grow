@@ -3,6 +3,11 @@ import Banner from '../../../Banner/Banner'
 import Titletag from '../../../Titletag/Titletag';
 import './SatelliteImageryIntegration.css'
 import GridSection from './GridSection/GridSection';
+import topviewcoast from '../../../../assets/top-view-coast.webp'
+import fantasticseascape from '../../../../assets/fantastic-seascape.webp'
+import ship1 from '../../../../assets/ship_1.webp'
+import sar1 from '../../../../assets/sar_1.webp'
+import ocean from '../../../../assets/ocean.webp'
 const SatelliteImageryIntegration = () => {
     const breadcrumbItems = [
         { path: '/', label: 'Home' },
@@ -12,7 +17,7 @@ const SatelliteImageryIntegration = () => {
     <>
     <Banner 
       title="Satellite Imagery Integration"
-      backgroundImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/top-view-coast.webp'
+      backgroundImage={topviewcoast}
       breadcrumbItems={breadcrumbItems} // Pass the breadcrumbItems here
     />
       
@@ -21,7 +26,7 @@ const SatelliteImageryIntegration = () => {
       <div className='container'>
       <Titletag
           title="Satellite Imagery Integration"
-          bgImage='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/fantastic-seascape.webp'
+          bgImage={fantasticseascape}
           className="pt-5"
         />
         <p className='txt1'>
@@ -34,16 +39,16 @@ const SatelliteImageryIntegration = () => {
   <div class="shapehere"></div>
   <section>
   <GridSection 
-        image='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ship_1.webp' 
+        image={ship1} 
         content="The Visible Infrared Imaging Radiometer Suite (VIIRS) is a satellite system orbiting the poles equipped with highly sensitive optical sensors designed to capture nighttime light emissions. Maintained by the Earth Observation Group (EOG) at the Colorado School of Mines, the VIIRS Boat Detection (VBD) database identifies vessels utilizing light to attract catch, such as industrial squid vessels and certain types of purse seines. In collaboration with the Earth Observation Group, we are integrating this database into our platforms to enhance vessel tracking data, addressing the gap where over 85 percent of fishing vessels in the VIIRS database do not transmit AIS or VMS signals."
       />
       <GridSection 
-        image='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/sar_1.webp' 
+        image={sar1} 
         content="Synthetic aperture radar (SAR) technology enables mapping of the Earth's surface by penetrating cloud cover, which typically blankets more than two-thirds of the planet at any given time. SAR's capability to function in all weather conditions, day or night, facilitates the swift discovery of potentially significant trends. We are currently devising methodologies for automated vessel detection using SAR imagery."
         reverse={true} // Set reverse to true to swap the order
       />
         <GridSection 
-        image='https://webpagecdnstorage.blob.core.windows.net/precisiongrow/ocean.webp' 
+        image={ocean} 
         content="Optical imagery, including visible and sometimes infrared images, is provided by satellites like those featured on Google Earth. On clear days, optical satellite imagery enables observation of vessels at sea, offering compelling visual evidence of vessel activity and types. Coastal regions are regularly surveyed using medium-resolution optical systems like the Sentinel-2 constellation (with approximately 15-meter spatial resolution), and we have developed algorithms for automated vessel detection in these images. Additionally, we have collaborated with providers of higher-resolution optical imagery data, such as Planet Labs, which offer imagery at 3-meter spatial resolution."
       />
   </section>

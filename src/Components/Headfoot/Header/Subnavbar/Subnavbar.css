@@ -121,7 +121,7 @@ a.nav-link.ex-link1:hover{
 @media (min-width: 991px) and (max-width: 1025px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         margin-left: 0px !important;
-        font-size: 13px !important;
+        font-size: 10px !important;
         position: relative;
     }
     .top-bar-area ul {
